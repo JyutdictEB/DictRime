@@ -1,0 +1,468 @@
+# Rime dictionary
+# encoding utf 8
+#
+# HamZauJyutPing   欽拼
+#
+
+---
+name: sawmoq.jyutping
+version: "221116"
+sort: by_weight
+use_preset_vocabulary: true
+max_phrase_length: 9
+min_phrase_weight: 100
+...
+侊	gvaang1	
+攦	co3	
+昭	ciu6	
+㪴	ddu2	
+偀	ing1	
+謌䜕	glo1 bbaai3
+䛄	yn3	
+𢯦	raai4	
+橛	gat1	
+煞	slaat3	
+㧻	duek3	
+妛	ny1	
+坻	day2	
+佧	gaa6	
+呌	do5	
+㱣	noi5	
+摤	caang3	
+㥶	haan4	
+𢪉	hyn2	
+珎	ddi1	
+揣	coi6	
+䏙	dam3	
+岇	slaang1 
+唃	gok3	
+咮	cay1	
+倥	hoong1	
+誏	laang6 
+䠴	ddyn1	
+徿	loong1	
+枦	ho6	
+貱	be3	
+㗅	ho4	
+楟	ding4	
+
+睮	jay2
+締	ddai2
+壯	cueng6
+書	slay1
+廸	dyk4
+
+叴	gou1
+佲	myng4
+𬿇	de1
+𪜳	min4
+𬽫	dou1
+僂	rau4
+傃	slou1
+𬾀	gloong3
+𬾀𬿇	gloong3 de1
+迩	nei5
+㡾	han5
+亓	gi4
+亓迩	gi4 nei5
+亓㡾	gi4 han5
+㖇	lay4
+俌㖇	bou5 lay4
+庅	mae4
+亓㖇	gi4 lay4
+吆	my6
+吆㖇	my6 lay4
+𰔢	ban4
+𰔢㖇	ban4 lay4
+X	dang2
+X㖇	dang2 lay4
+否	bbou2
+侎	mi2
+䓁	dang5
+𫯓	laai1
+𱎝	bbaang2
+X	eet1
+𬾖	yn3
+𬺴	ddeu1
+一	it1
+雙	slong1
+二	ngei6
+三	slaam1
+四	slei3
+五	haa2
+五	ngu5
+厷	hung1
+老	laau5
+𮡙	rai4
+広	gwaang3
+㫗	naa1
+𥔧	nak1
+X	reek4
+依	i2
+㐻	noi5
+𭿽	din2
+𨱥	gan3
+狹	gap4
+X	hep6
+𮖧	bbaang1
+𫱆	bbyk1
+偲	slaai1
+俌	bou5
+伝	vun4
+X	nge4
+𭒹	lyk4
+娘	naang4
+婭	jaa6
+侰	gwaan1
+㑄	me6
+𠇑	bo6
+㗢	doong6
+㗢唗	doong6 du4
+䰾	blaa1
+鵦	rook4
+猍	maa1
+蛝	nan4
+蟉	rau1
+蚅	ngy4
+䖝	non1
+𣖙	mai5
+𣙿	mai5
+崬	ddoong1
+X	ngaam6
+栢	maak3
+秖	ce6
+苿	bbay1
+撂	raak6
+脞	nang1
+脞𣖙	nang1 mai5
+脞𣙿	nang1 mai5
+若	ddok3
+芓	njy2
+䋏	caak6
+脞	nang1
+胬	no6
+𬠼	lyet6
+𮪰	ddok3
+䏢	bi4
+卝	glai3
+𮗣	gau1
+𭯢	rieng1
+𭯓	byn1
+𭯞	bloom1
+X	jam1
+頄	glau2
+聏	ry4
+罒	daa1
+罒	raa1
+脝	ddang1
+咟	baak3
+𤘈	heu2
+肦	fan4
+𫇖	lin5
+脷	rai6
+脷	lai6
+X	rip4
+X摓	rip4 fyng4
+蹎	din1
+跏	gaa1
+頄䯊	glau2 ho3
+摓	fyng4
+𦐡	fyet6
+胴	dung5
+胔	slai2
+㗅	ho4
+倰	lang1
+臆	ak1
+𪫬	cay1
+𦞂	dap1
+X	ddum3
+哏	gyn1
+唊	hap4
+𠶻	cup1
+X	bi1
+㖪	ruek6
+𠱀	bo3
+X	diu1
+X	cay1
+XX	diu1 cay1
+㗛	riu1
+睔	ran1
+𦖑	nji1
+𮀊	ro5
+惗	nam2
+X	mai6
+𫫠	slup1
+憦	laau1
+𭾮	nin4
+𰢮	li5
+殆	daai1
+㪃	gaa2
+㨃	ddoi3
+䙷	dyk1
+𭸑	njan1
+䙷𭸑	dyk1 njan1
+𭡡	dup4
+𠞩	dat1
+𠠪	ron3
+𫥴	baa3
+𢫆	ban1
+𠻘	cook4
+X	bang3
+刮	gwet3
+X	gau1
+X	bbyt1
+X	aap3
+翉	bbin1
+䟛	blaai2
+庲	maa1
+䢏	dau2
+𭾮	nin4
+亼	nang6
+䠴	ddyn1
+𮝔	ban3
+𪮐	ban3
+沰	dook1
+許	hay2
+X	ho5
+𭫅	dok3
+㝓	goot4
+X	cu1
+𤀕	slak4
+X	raa3
+抹	maat6
+X	neng6
+擁	ung2
+狘	vit1
+狘	vut1
+𭫤	rak1
+X	njip4
+稽	ge3
+算	sluen3
+詉	nau4
+講	gaang2
+𣢄	eu1
+嫽	laau5
+X	liu6
+X	fou5
+𤂱	lai1
+㓉	gloot1
+𰉹	bboong1
+昳	ddit1
+燈	dang1
+燈昙	dang1 ngoon4
+X	roong6
+朜	ddyen1
+X朜	roong6 ddyen1
+𣇟	ddaau1
+𣆋	dei3
+𣇟𣆋	ddaau1 dei3
+淰	ram5
+雰	fyn1
+沱	daa6
+X	hu4
+海	haai2
+X	gu1
+𰧄	rin1
+砂	slaa1
+坋	fan5
+𡉿	mook1
+X	mon3
+𡉿X	mook1 mon3
+𡎜	naam6
+䨗	fy2
+𡉿	mook1
+旻	bbyn1
+檒	rum4
+𮦈	nai1
+X	haang1
+𮦈X	nai1 haang1
+煾	oon3
+𩇭	fei4
+𭴧/炓	dau6
+𤆤	coom6
+䠉	roon1
+垖	ddooi1
+坡	bo1
+岜	blaa1
+赬	dding1
+䓔	heu1
+縓	hen2
+皓	haau1
+黕	ddam1
+𪑖	fon5
+晗	ham6
+昙	ngoon4
+𥝓	bi1
+㬔	rau2
+凊	ceng5
+澰	rim1
+𮄾	mo3
+耆	ge3
+珎	ddei1
+孬	ryei5
+X	vaai6
+惡	jaak3
+膒	nau6
+X	byn3
+𥆝	slo6
+X	myn4
+X	duen1
+圝	luen4
+X	ham4
+辶本	bum2
+𨪀	mau4
+𦃳	lyen3
+X	lyem2
+𭱶	ddak1
+𪹣	hay3
+丁	deng1
+𨑸	glay2
+𨒨	glai1
+𠮢	gwaa4
+㔫	slyei5
+囿	jou3
+𨳙	dday1
+𣷹	dem1
+踉	rieng4
+X	ddi2
+輳	cau3
+始	ci2
+X	dang6
+因爲	an1 vi6
+𭓖	co6
+䢙	bai1
+𢫈	gu6
+闌	raan4
+鹶	ham4
+昙曫	ngoon6 lyen4
+胔𣍨	slai2 ddy1
+𰹃	ddo2
+X	cau1
+X	ngoom4
+X	jau5
+𰔸	rak1
+𬟼	moot4
+歐	au1
+提	day4
+㭲跏	gook1 gaa1
+𣙿	fai5
+X	buet3
+𨃀	len6
+跌	slat1
+𲃭	slat1
+渧	dai2
+倇	vaan1
+㬂	ngau4
+𥔶	geng1
+X	loi4
+淰罒	ram5 daa1
+淰罒	ram5 raa1
+
+丌	gi2
+丌庅	gi2 maa4
+迦	gaa6
+
+正	cing3
+着	dyk1
+常	cieng4
+啱	ngaam3
+約	jak1
+約	jak1
+了	liu5
+過	gvaa3
+𰃺	bai4 bai4
+煞	saat3
+倒	daau3
+X	deu6
+倒X	daau3 cung4
+締	ddai2
+騰	dang4
+X	y3
+歐	au1
+始	ci2
+冾	het3
+㱑	ci5
+單	daan1
+只	ci2
+冾	het3
+里	li2
+X	jam6
+可	go2
+亦	hi5
+𠬶	cam6
+㱑	ci5
+縂	cung2
+否	bbou2
+X	y2
+侎	mi2
+X	am2
+䚸	gai2
+廸	dyk4
+囿	jou3
+途	du6
+過	gvaa3
+啲	di1
+仝	dung4
+輳	cau3
+㑣	lum2
+許	hay2
+𬻳	deng1
+幫	baang1
+䢏	dau2
+使着	say2 dyk1
+許	hay2
+𮀊詉	ro5 nau4
+迩	nei5
+㡾	han5
+庅	maa4
+㖇	lay4
+𰔢㖇	ban4 lay4
+幾𫯓	gei2 laai1
+X迩	gaau6 nei5
+X迩	gaau6 nei5
+𭐶	rau6
+X	cai4
+𫯓	laai1
+至	cei3
+𭓫	my6
+𪵩	raa3
+段	duen6
+亓	gi4
+X	haang2
+𫣆	an1
+啲	di1
+因爲	an1 vi6
+XX	ddi1 gaa6
+𭕈詉	daang6 nau4
+打X	daa2 aan1
+只歐	ci2 au1
+既然	gay3 jien4
+𰔢𰔢	ban4 ban4
+情願	cing4 njien6
+㔫	syi5
+𠮢	gvaa4
+𮡙	rai4
+丄	gyn4
+丅	laa2
+𨳙	dday1
+𨳿	rok6
+𫖂	naa2
+逭	gon3
+𣆝	ray4
+㫔	hen4
+𫔚	glaang1
+X着	gvang4 dyk1
+X騰	gven1 dang4
+爲了	vi6 liu5
+打	daa2
+X	dai3
+從	coong4
+騰	dang4
+叺	hau2
+窋	ok3
+𰈜	co6
+倰	lang1
+過䢙	gvaa3 bai1
+䢙	bai1
+各	gaak6
+仛	do5

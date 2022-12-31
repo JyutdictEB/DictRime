@@ -1,0 +1,393 @@
+# Rime dictionary
+# encoding utf 8
+#
+# HamZauJyutPing   欽拼
+#
+
+---
+name: daeizmoq.jyutping
+version: "221116"
+sort: by_weight
+use_preset_vocabulary: true
+max_phrase_length: 9
+min_phrase_weight: 100
+...
+ฉัน	can1h
+กู	gu1
+ข้า	kaa2
+เธอ	dtoe1
+มึง	myng4
+เจ้า	zaau2
+เจ้า	zau2
+เขา	khau1h
+เขา	khau5
+มัน	man4
+เรา	rau4
+พวก	puek6
+คุณ	kunj4
+พวกคุณ	puek6 kunj4
+เขา	khau1h
+พวกเขา	puek6 khau1h
+มัน	man4
+พวกมัน	puek6 man4
+นี้	ni5
+นั้น	nan5
+ที่	ti6
+ที่นี่	ti6 ni6
+ที่นั่น	ti6 nan6
+ใคร	kray4
+ผู้	puo2
+ใด	dday1
+ผู้ใด	puo2 dday1
+อะไร	ah3 ray4
+ที่ไหน	ti6 nai1h
+ไหน	nai1h
+เมื่อไร	mye6 rai4
+อย่างไร	jaang3 rai4
+ไม่	mai6
+ทั้งหมด	tang5 moot3
+มาก	maak6
+บ้าง	bbaang2
+สองสาม	song1h saam1h
+อื่น	yun3
+หนึ่ง	nyng3
+สอง	song1h
+สาม	saam1h
+สี่	si3
+ห้า	haa2
+ใหญ่	njay3
+โต	doo1
+ยาว	njaau4
+กว้าง	gwaang2
+หนา	naa1h
+หนัก	nak3
+เล็ก	leek5
+น้อย	noi5
+สั้น	san2
+แคบ	kep6
+บาง	bbaang1
+หญิง	njing1h
+ชาย	caai4
+คน	koon4
+เด็ก	ddeek3
+เมีย	mie4
+ผัว	pue1h
+แม่	me6
+พ่อ	po6
+สัตว์	sat3
+ปลา	blaa1
+นก	nook5
+หมา	maa1h
+เล็น	leen4
+เหา	hau1h
+งู	ngu4
+หนอน	non1h
+ต้น	doon2
+ไม้	maai5
+ไม้	mai5
+ต้นไม้	doon2 maai5
+ต้นไม้	doon2 mai5
+ดง	ddoong1
+ป่า	baa3
+กิ่ง	ging3
+ผลไม้	poon1h lah5 maai5
+ผลไม้	poon1h lah5 mai5
+เม็ด	meet5
+ใบ	bbay1
+ราก	raak6
+เปลือก	blyek3
+ผิว	piu1h
+ดอก	ddok3
+หญ้า	njaa2
+เชือก	cyek6
+หนัง	nang1h
+เนื้อ	nye5
+เลือด	lyet6
+กระดูก	grah3 dduok3
+ก้าง	gaang2
+มัน	man4
+ไข่	kai3
+เขา	kau1h
+หาง	haang1h
+ขน	koon1h
+ผม	poom1h
+หัว	hue1h
+หู	hu1h
+ตา	daa1
+จมูก	za1 muok3
+ปาก	baak3
+ฟัน	fan1
+ลิ้น	lin5
+เล็บ	lep5
+เท้า	taau5
+ตีน	dijn1
+เท้า	tau5
+ขา	kaa1h
+เข่า	kau3
+มือ	myu4
+ปีก	bijk3
+พุง	pung4
+ไส้	sai2
+คอ	ko4
+ศอ	so1h
+หลัง	lang1h
+นม	noom4
+ใจ	zay1
+ตับ	dap3
+ดื่ม	ddyum3
+กิน	gin1
+กัด	gat3
+ดูด	ddyut3
+ถ่ม	toom3
+คาย	kaai4
+อ้วก	uek6
+อาเจียน	aa1 zien1
+เป่า	bau3
+หาย	haai1h
+หายใจ	haai1h zay1
+หัว	hue1h
+เราะ	roh5
+หัวเราะ	hue1h roh5
+เห็น	heen1h
+ยิน	jin4
+รู้	ru5
+คิด	kit5
+ดม	ddoom1
+กลัว	glue1
+นอน	non1
+อยู่	ju3
+อาศัย	aa1 sai1h
+ตาย	daai1
+ฆ่า	gkaa2
+สู้	su2
+ล่า	laa6
+ตี	di1
+ตัด	dat3
+ผ่า	paa3
+แทง	teng4
+เสียบ	siep3
+เกา	gau1
+ขุด	kut3
+ว่าย	waai6
+บิน	bbin1
+เดิน	ddoen1
+มา	maa4
+นอน	non4
+นั่ง	nang6
+ยืน	jyun4
+หัน	han1h
+ตก	dook3
+หล่น	loon3
+ให้	hay2
+จับ	zap3
+คั้น	kan5
+ถู	tu1h
+นวด	nuet6
+ล้าง	laang5
+เช็ด	ceet5
+ดึง	ddyng1
+ลาก	laak6
+ผลัก	plaak3
+ขว้าง	kwaang2
+ปา	baa1
+ผูก	puok3
+เย็บ	jeep5
+นับ	nap5
+บอก	bok3
+ร้อง	rong5
+เล่น	leen6
+ลอย	loi4
+ไหล	lai1h
+แช่เย็น	ce6 jeen4
+บวม	bbuem1
+ตะวัน	dah3 wan4
+เดือน	ddyen1
+ดาว	ddaau1
+น้ำ	naam5
+ฝน	fon1h
+แม่น้ำ	me6 naam5
+ทะเลสาบ	tah5 lei4 saap3
+ทะเล	tah5 lei4
+มหาสมุทร	ma5 haa1h sa3 mut3
+เกลือ	glye1
+หิน	hin1h
+ทราย	traai4
+ทราย	saai4
+ฝุ่น	fun3
+ดิน	ddin1
+เมฆ	meik6
+หมอก	mok3
+ฟ้า	faa5
+ลม	loom4
+หิมะ	hi3 mah5
+แข็ง	kaeng1h
+น้ำแข็ง	naam5 kaeng1h
+ควัน	kwan4
+ไฟ	fai4
+เถ้า	tau2
+เผา	pau2
+ทาง	taang4
+เขา	kau1h
+แดง	ddeng1
+เขียว	kieu1h
+เหลือง	lyeng1h
+ขาว	kaau1h
+ดำ	ddam1
+กลาง	glaang1
+กลางคืน	glaang1 kyun4
+กลางวัน	glaang1 wan4
+ปี	bi1
+อุ่น	un3
+หนาว	naau1h
+เต็ม	deem1
+ใหม่	mai3
+แก่	ge3
+เฒ่า	rdau6
+ดี	ddi1
+เลว	leiu4
+ชั่ว	cua6
+เน่า	nau6
+สกปรก	sook3 ga3 prook3
+ตรง	droong1
+กลม	gloom1
+มน	moon4
+คม	koom4
+ทื่อ	tyu6
+ละมุน	lah5 mun4
+เปียก	biek3
+แห้ง	heng2
+ถูก	tuok3
+ใกล้	glay2
+ไกล	glai1
+ขวา	kwaa1h
+ซ้าย	saai5
+ที่	ti6
+ใน	nay4
+กับ	gap3
+ด้วย	dduai2
+และ	leh5
+ถ้า	taa2
+เพราะ	prauh5
+ชื่อ	cyu6
+ไป	bai1
+ทำ	tam4
+บ้าน	bbaan1
+ขม	koom1'
+เมื่อวาน	mye6 waan4
+สะดือ	sah3 ddyu1
+ซ่อน	son6
+พก	pook5
+มด	moot5
+เอา	au1
+ต้นขา	doon2 kaa1'
+ไม้	mai5
+วิ่ง	wing6
+ร้องไห้	rong5 hai2
+หวาน	waan1
+เงา	ngau4
+แข็ง	keng1'
+บด	bboot3
+น้ำตา	naem5 daa1
+
+กำลัง	gam1 lang4
+บ่อย	bboi1
+เย็น	jeen1
+พร้อม	prom5
+จะ	zah3
+แล้ว	leu5
+เคย	koei4
+ทุกครั้ง	tuk5 krang5
+หมดเลย	moot3 loei4
+กลับ	glap3
+อีก	ijk3
+อีกครั้ง	ijk3 krang5
+ใหม่	mai3
+เตรียม	driem1
+ก่อน	gon3
+ได้	ddai2
+ได้	ddai2
+เสร็จ	sret3
+ต้อง	dong2
+เอา	au1
+จะ	zah3
+ก็	go6
+ก็จะ	go6 zah3
+แค่	ke6
+ยัง	njang4
+ยัง	njang4
+ด้วย	dduei2
+ทั้ง	tang5
+ไม่	mai6
+ไม่มี	mai6 mi4
+ยัง	njang4
+อย่า	njaa3
+ห้าม	haam2
+คือ	kyu4
+เป็น	been1
+ยู่	ju6
+ของ	khong4
+กว่า	gwaa3
+กว่า	gwaa3
+และ	leh5
+กับ	gap3
+เหมือน	myen1h
+แก่	ge3
+ถูก	tuok3
+ช่วย	cuei6
+ให้	hay2
+ทำให้	tam4 hay2
+ให้	hay2
+หรือ	rye1h
+นี้	ni5
+ที่	ti6
+ไร	rai1
+ไหน	nai1h
+ย่างไร	jaang6 rai1
+กี่	gi3
+แค่ไหน	ke6 nai1h
+ทีเดียว	ti4 ddieu1
+มาก	maak3
+เกินไป	goen1 bai1
+ที่สุด	ti6 sut3
+ตอนที่	don1 ti6
+ขณะที่	ka1h nah3 ti6
+ช่วง	cueng6
+ที่	ti6
+อัน	an1
+พวก	puek6
+เพราะ	prauh5
+เพราะว่า	prauh5 waa6
+เนื่องจาก	nyeng6 zaak3
+ดังนั้น	ddang1 nan5
+ถ้า	taa2
+ทั้งที่	tang5 ti6
+แม้ว่า	me5 waa6
+ถึง	tyng1h
+ตราบใดที่	draap3 day1 ti6
+ตราบเท่าที่	draap3 tau6 ti6
+ไหนๆก็	nai1h nai1h go6
+ซ้าย	saai5
+ขวา	kwaa1h
+ตรงไป	droong1h bai1
+เหนือ	nye1h
+บน	bboon1
+ใต้	day2
+ล่าง	laang6
+ใน	day1
+นอก	nok6
+หน้า	naa2
+หลัง	lang1h
+ใกล้	glai2
+ระหว่าง	rah5 waang3
+รอบ	rob6
+เกี่ยวกับ	gieu3 gap3
+สำหรับ	sam1h rap3
+จาก	zaak3
+ถึง	tyng1h
+เข้า	kau2
+ออกจาก	ok3 zaak3
+ทาง	taang4
+ตาม	daam1
+ผ่าน	paan3
+เอง	eing1
+กัน	gan1

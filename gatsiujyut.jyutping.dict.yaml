@@ -1,0 +1,1165 @@
+# Rime dictionary
+# encoding utf 8
+#
+# HamZauJyutPing   欽拼
+#
+
+---
+name: gatsiu.jyutping
+version: "221231"
+sort: by_weight
+use_preset_vocabulary: true
+max_phrase_length: 9
+min_phrase_weight: 100
+...
+
+男人	jaa4 loou6 vun1
+女人	ny6 loou6 vun1
+女人	zaau4 loou6 vun1
+人	loou6 vun1
+鳥	nok1 noh1
+鳥	nok1
+狗	maa1
+魚刺	bbaa1 ci2
+魚刺	bbaa1 leep3
+雞蝨	gai1 zi1
+豬	moou1
+木	mai6
+果子	gwo3 zi3
+葉	bbou4
+根	gong1
+木皮	mai6 nang1
+肉	mee6
+油	ju1
+蛋	njoom1
+頭	laau6
+耳	laa4
+眼	ddaa1
+鼻	pi4
+嘴	bbaah3
+牙	zan6
+頭脷	laau6 li6
+脷頭	li6 laau6
+手	maau4
+腳	goh3
+血	vih6
+骨頭	leek3 laau6
+頭毛	laau6 moou2
+頭鬚	laau6 sloou2
+腳頭蓋	goh3 laau6 tu1
+頸喉	leen6 go4
+肚	tong6
+心	slum1
+肝	ddap3
+尾	bbaai1
+毛	vun4
+角	gui4 gaah3
+爪	gai1 njaau3
+日	ddaa2
+太陽	loou6 van4
+月亮	zaai1 dde2
+星	sleeng1
+水	nam6
+雲	van1 vaa2
+水	nam6
+夜晚	ping6 kyn1
+山	zang1
+石	lin4
+沙	zaang4
+地	mat1
+雲	van1 vaa2
+火	vi4
+火煙	vi4 ieen1
+燒	zoou1
+紅	hong4
+黃	laang1
+白	poek6
+黑	lam1
+綠	lo1
+喫	gy1
+喝	haap3
+咬	gap1
+講	loom1
+咬	gap1
+看	haang2
+聽	teeng2
+識	zak3
+懂	ddung3
+識	zak3
+睡	ngap1
+死	ddaai1
+殺	gaa2
+坐	nang6
+燒	zoou1
+來	maa1
+企	jan2
+行	leu4
+到	tang4
+游水	ju4 nam6
+飛	moong1
+多	laai1
+大	njoou2
+長	lui1
+細	nak3
+熱	lit3
+凍	ddooh3
+滿	ddik3
+滿	mun4
+新	zoong1
+好	hoou6
+圓	vin1
+乾	loeng2
+𤍒	loeng2
+一	taai6 jat3
+二	taai6 nji6
+我	ngau4
+你	mi4
+我哋	ngau4 leh6
+這	zi6
+呢	ni6
+呢	ni6
+呶	nun6
+邊	ly4
+乜	mak3
+乜	mak3 gou6
+不	lang4
+多少	laai1 slieeu3
+幾多	gi2 laai1
+晚	gam6
+面	naa2
+眼皮	ddaa1 nang1
+鬍	mum6
+乳	nen6
+大腿	gok3 vaa4
+大腿	maak6 vaa4
+脈	meeh3
+眼淚	ddaa1 gan6
+鼻涕	mook1
+口水	bbaah3 nam6
+耳屎	laa4 gai6
+汗	gaang6
+屎	gai6
+尿	lu1
+屁	ddak3
+老婆	mai4 paa1
+仔	leek1
+仔孫	leek1 laang1
+孫	laang1
+人	loou6 vun1
+老人	maa3 loou4 vun1
+做官	bbook3 ngaah6
+屋	laan4
+房	laan4
+竈口	zaau2 bbaah3
+牛	gui4
+馬	maa4
+貓	meu4
+鴿子	gop3
+螞蟻	mai6 moh1
+牛欄	gui4 laan2
+豬欄	moou1 laan2
+欄豬	laan2 moou1
+鳥竇	nooh1 ddoou2
+蜂房	zang6 loong1
+樑	laang1 zeek3
+樑	loeng1
+門	ddeeng1
+石灰	lin4 hoi1
+路	slan1
+船	lo4
+褲	vo2
+鞋	haai1
+草鞋	bbat3 haai1
+布	vang1
+鍋	ddoou1
+煲	bbaau1
+柴	vun4
+刀	zaa6
+飯	slaau1
+罌	eng2
+篩子	lap1 lang4
+鞭	bbin1
+火柴	vi2 vun1
+耳	laa4
+犁	zjui1
+鍬	can6
+擔	gaang4
+糞箕	bbun6 gi1
+磨	maa6
+碓	ddoi2
+錐	zui2
+錐仔	zui2 gie1
+木馬	mai6 maa4
+木糠	mai6 haang1
+木鷂	mai6 jeeu6
+筆	bboh3
+雞眼	gai1 ddaa1
+鍋巴	ddoou1
+菜	zak3
+肉	me6
+豬肉	moou1 mee6
+油	ju1
+豬油	moou1 ju1
+酒餅	jan2 bbing6
+糖	loeng1
+廉	lim1
+頭	laau6
+黃	laang1
+黑	lam1
+苦	gam4
+香	sloom1
+鹹	lang2
+橫	veen6
+大	njoou2
+細	nak3
+長	lui1
+短	ddan2
+厚	naa1
+薄	bboeng1
+方	vong1
+圓	vin1
+扁	bbeen3
+高	zaang1
+矮	ddam2
+低	ddam2
+滿	ddik3
+飽	han3
+癟	leep3
+軟	mau6
+韌	njyt3
+深	lak1
+幼	un2
+密	naa1
+溼	zak1
+旱	laang6
+多	laai1
+遠	lui1
+輕	kau2
+早	zau4
+煩	jeem3
+嘈	vaan6
+壞	vaai6
+舊	gau2
+生	lop6
+幼	un2
+嫩	un2
+脂	vai1
+亮	bbaang1
+出	ook3
+曬	ddaah3
+落	ddoh3
+冧	lum2
+落	ddooh3
+破	lai4
+崩	bbong1
+響	lang1
+甩	lat3
+咬	gap1
+啼	zang4
+生	laai2
+開花	haai1 vaa1
+來	maa1
+去	bbai1
+戆	ngoong6
+死	ddaai1
+嫁	haa2
+娶	on1
+生	laai2
+哭	ngaai2
+咬	gap1
+嗑	le2
+咽	lan2
+眯眼	ni2 ddaa1
+眯	ni2
+睡	ngap1
+起身	lok1 slan1
+埋	lam4
+葬	lam4
+纏	leeu6
+防火	zung3
+要	oi2
+行	loo6
+首	mau4
+圍	bbaah3
+幾	gi3
+幾	gaai2
+𢴬	bbaan2
+有	mi1
+笑	lieeu4
+問	zai6
+嗅	njing2
+佢	man6
+分	vun1
+隻	to1
+手背	maau4 bbui2
+面顴	naa2 ddaang1
+顴骨	ddaang1 leek3
+腳踝	goh3 ddaa1
+手喉	maau4 go4
+手指	maau4 ging2
+手甲	maau4 gaap3
+肺	vi2
+水殼	nam6 haah3
+梳	zaai1
+𢴬網	bbaan2 slaai2
+網	slaai2
+米	lap1
+粳米	njeen6 lap1
+稻糯	ngaau6 naau4
+鹽	njieeu2
+酒	jan2
+涫水	laan1 nam6
+名字	naa2 naai1
+嘢	goou6
+細	nak3
+乾	loeng2
+溼	zak1
+近	lau2
+朽	lai4
+爛	lai4
+回	leeng1
+個	naa4
+筒	hoop6
+年	vui1
+半	ddaa2
+牽	liu4
+扠	zu1
+風	zan6
+針	njyt6
+涫	laan1
+底	ddam2
+前	gaai2
+前先	gaai2 slin1
+晨	peeng6
+蟑螂	ddaa3 laap6
+蟋蟀	maa1 gaang2
+蟋蟀	gaang2 maa1
+跳蚤田	mai6 lou4 naa4
+腸	li6
+粥	ngaai4
+直	lat1
+直	lak1
+淨	laang2
+髒	ngan3
+重	kong1
+凍	ddooh3
+𦢊	bboong4
+窮	ai2
+醜	kip3
+和睦	vo1 laa6
+飛	moong1
+拱	lang1
+拱	miu2
+鵮	caa6
+進	zan2
+入	lu4
+上	lok1
+記 	au1
+活	naai1
+講	loom1
+嘈	vaan6
+扛	laam1
+扛	taak1
+分	van1
+喂	gy1
+你	mi4
+噉麼	gy6 moo3
+棵	tiu1
+盤子	pun1 bbooh6
+冰	bbing1
+竉	pong6
+地	mat1
+水	nam6
+大	njoou2
+石	lin4
+牛圈	fui4 gyn3
+牛圈	gui4 kyn3
+雲	van1 vaa2
+腳心	gok3 bbaan3 slum1
+腳心	gok3 slum1
+日	ddaa2
+太陽	ddaa1 bbaai1
+豆	tou6
+公雞	sleeng1
+風	zan6
+櫂	caau6
+傻	soo1
+虹	gaang6
+醜	kip3
+稻	ngaau6
+學校	haah6 haau1
+羊	joeng4
+捆	kwan3
+捆	gat1
+幼米	un2 lap1
+草	bbat3
+鵝	pun6
+狗	maa1
+朝	nau1
+大腸	njoou3
+獵狗	long1 maa1
+封	fung6
+火	vi4
+屍體	di1 tai3
+蟑螂	ddaa3 laap6
+碗	toi6
+晚飯	gam6 slaau1
+蚌	zui1
+矛	coe1
+陪伴	bbun1 sun1
+雷	gau4
+重	kong1
+髒	ngan3
+水殼	nam6 haah3
+酒凹	jan2 nap3
+面凹	naa2 nap3
+掛	gwaa6
+柞	aa1
+魚	bbaa1
+白	poek6
+蟲	ming4
+鳥	nok1
+蛋	njoom1
+秧	laa2
+雞㵒	gai1 fe2
+哨子	slaau1 zi3
+年	vui1
+吹火筒	cui1 vi2 toong1
+眼	ddaa1
+㢥	tung6
+糧食	sloeng1 slit1
+菜	zak3
+笡	caai3
+歪側	lak1 zak3
+打一頓	bban1l san1l
+痕	goom4
+架	ku6
+落雨	ddooh3 ngong1
+木糠	mai6 haang1
+油	ju1
+花蕾	vaa1 lui4
+老翁	loou6 oong1
+葉	bbou4
+鼻	pi4
+木	mai6
+臉	naa2
+月	njyt6
+頭	laau6
+麻煩	maa1 faan1
+花	vaa1
+肝	ddap3
+心毒	loom1 too6
+𢴬網	bbaan2 slaai2
+犁	zui1
+吟沉	ngam1 cam1
+急	gap3
+羣	koo3
+做官	bbook3 ngaah6
+臭氣	njan1 hy3
+臭	njan1
+水井	nam6 jang1
+屋裏	om3
+地	mat1
+雉雞	sleeng1 gai1
+低頭	ddam2 laau6
+水	nam6
+風	zan6
+虹	gaang6
+睏	ngap1
+睏着	ngap1 slo1
+一	jat3
+深	lak1
+批	pai1
+敲	hau3
+打	ty4
+敲	haau1
+減	gam1
+鹼水	gan6 nam6
+坐	nang6
+急	gap3
+物	mat1
+得	ddak3
+貓	meu1
+花蕾	vaa1 lweei1
+大牙	njeeu3 zan6
+窯	lieem1
+星	sleeng1
+公雞	sleeng1
+狹	keep6
+魚鰾	bbaa1 bbeet3
+骨頭	leek3 laau6
+那些	naa1 slye3
+那	nun6
+旁邊	pong1 bbeen6
+庚	geng1
+日	ddaa2
+水溝	nam6 goou1
+甜	tieam1
+文	mun1
+這隻	zee3 too1
+隻呢	to1 ni6
+外公	ngoi6 gung2
+豬	moou1
+香	sloom1
+雞閹	gai1 ddoon1
+蔥	coong1
+筒	hoop6
+涕	mook1
+讀	toh6
+陣雨	slong4l
+陣雨	can6 ngong1
+車	coe1
+張	zoeng1
+那裏	naa1 li4
+鷯哥	liu1 go1
+硝	slieeu1
+鯰魚	nim1 bbaa1
+滴	ddieem2l
+滴	ddik3
+石	lin4
+件	kieen6
+蟲	ming1
+醜	kip3
+鱉	bbit3
+手指節	maau4 ging2 zieet6
+錫	slik3
+哪裏	u3 cu1
+哪裏	ah6 cu1
+每天	mui4 tin1
+蚶	kum1
+鵝	pun6
+文	mun1
+蚊	njung1
+盆	bbut3
+臭蟲	muk1 lyt6
+爬	poe4
+鄰居	lan1 sloe2
+鐵鏈	tit3 loen1
+乾	loeng2
+針	njyt6
+白蟻	poek6 mo1
+噉麼	gy6 moo3
+姜心	cyn3 slum1
+姜田	goeng1 naa4
+寸	cyng2
+面	slyeeng6 paang6
+臭蟲	muk1 lyt6
+月	njyt6
+水	nam6
+鞋	haai1
+相逢	go3 lau3
+低	ddam2
+孫	laang1
+蠅	vaang6
+啞	laap6
+凸	ddat1
+側	zak3
+解	gaai6
+早	zau4
+晚	gam6
+風	zan6
+奔	bbang3
+答	ddaap3
+偷聽	lak1 teeng2
+偷	lak1 
+屁	ddak3
+老鷹	maa2 eeng1
+懷孕	feei1 ek3
+有孕	mi4 taai1
+有仔	mi4 leek1
+簫	sleeu1
+煩	jeem3
+妹	neen4
+莧菜	heeng1 zak3
+莧菜	hong1 zak3
+頁	jeep6
+手骨	maau4 leek3
+笛	teek1
+嗑	le2
+河水岸	mai6 nam6 bbeng4
+這麼	zee6 moo3
+碓	ddoi2
+人	loou6 vun1
+癢	goom4
+日蝕	van4 joon1
+秤	coong2
+彎	kook3
+抽	slo4
+根	gong1
+蛇	njoe1
+離家	li1 gaa1
+紋	miu2
+廟	mieeu6
+婶	zim3
+叔母	bbaau1 zip3
+點	ddim3
+現時	jin6 sli1
+火煙	vi4 ieen1
+櫃	ling2
+碟	tip6
+熱	lit6
+翼	bbik3
+過濾	gu2 ly6
+伸長	slan1 lui1
+心	slum1
+毛	vun4
+濺	mung1ll
+寬	vut6
+謝	coe6
+印章	an2 zoeng1
+手掌	maau4 zoeng3
+強壯	koeng1 zong2
+勁	gong1
+邊	ly4
+斷	tyn6
+炕火	haang2 njyng4
+炕	haang2
+淺	ddyt3
+脫	tyk3
+落	laak3
+死	ddaai1
+軟	mau6
+黑	lam1
+路	slan1
+屋	laan4
+急	gap3
+地	mat1
+細	nak3
+老實	loou4l sak1
+直	lak1
+零	leen1
+少	sleeu3
+刀尖	zaa6 zjeem2
+門	ddeen1
+口	eeng3
+刀鞘	zaa6 sleep3
+屋脊	gai1 bbeet3
+席	veek1
+遮	ze3
+冒煙	moo3 in1
+碗	toi6
+鍋	ddoou1
+陰	joom1
+𦢊	bboong4
+喐	njook3
+過	gwo2
+螺	loe1
+螺絲刀	lo1 sli1 zaa6
+騎	ki1
+小氣	sliu3 hy2
+跳皮	tieeu2 pi1
+跳	tieeu2
+飽	gim4
+腎	gin4
+鉸剪	gaau2 zin6
+冰	bbing1
+漏斗	zip3
+骨節	leek3 zit3
+滿	ddik3
+收	slu1
+錐	zui3
+姜心	cyn3 slum1
+癟	bbun3
+姑公	gu2 gung2
+姑丈	gu2 coeng6
+結果	gi3 goe3
+蜂蜜	zang6 loeng1
+餓	joek6
+雷打	gau4 ty4
+帽	zyn6
+韌	njyt3
+沸	laan1
+舊	gau2
+雷黑	gau4 lam1
+酒	jan2
+索	njang4
+肝	ddap3
+戌	slat3
+花瓣	vaa1 bbin4
+緊急	gong6 eeu3
+急	gap3
+點頭	ddieem3 laau6
+伌	ngak1
+橫	veen6
+晴	ceeng1
+鞘	zjeep3
+顏色	ngeeng6 sleet3
+變色	bbin3 sleek3
+甩	lat3
+笮	zeh3
+硌腳	gih3 goo3
+褪	toi3
+解	gaai3
+甩	lat3
+甩	lat3
+頭毛	laau6 moou2
+冧	lum2
+斤	gong1
+出	ook3
+幫助	bbong1 co6
+點火	ddim3 vi1
+根	tiu1
+條	tieeu1
+甜酒	tim1 jan2
+縣	vin6
+小舌	ddiu2 zung1 slin2
+晴	cing1
+醜人	kip3 jaa1
+㓤	git3
+節儉	zik3 yeh6
+尿	lu1
+年	vui1
+衙門	ngaa4l mum1
+楔	gun3
+櫼	zieem3
+朵	ddoe3
+羊	joeng4
+氣	hy2
+菜園	zak3 zyn4
+缺	kyt3
+地	mat1
+石	lin4
+腸	li6
+虹	gaang6
+北	vak3
+海	gong2
+年	vui1
+火	vi4
+粈	neu1
+晚	gam6
+嘴	bbaah3
+鋼	gaang2
+遠	lui1
+葉	bbou4
+粥	ngaai4
+細	nak3
+近	lau2
+褲	vo2
+厚	naa1
+細	nak3
+睏	ngap1
+塊	gam6
+傻	maa2
+傻戇	maa2 ngaang6
+懵懂	mung6 ddung3
+窮	ai2
+種子	zung3 zi3
+種	bbong2
+棍	gwan6
+老鼠	mai6 niu1
+鴨	bboh3
+蜜蜂	zang6
+蜜蜂	zang2
+木棉木	min6 vaa1 mai6
+苦楝木	gam4 lyn1 mai6
+藤	jau1
+菜	zak3
+菜芥	zak3 gaah6
+六	sloh3
+羅	lon1
+田	naa4
+竹	bbit3
+波椂	bbo1 look3
+棯子	gaa3 neem3
+姜心	cyn3 slum1
+嘜菜	mek3 zak3
+竭	goh1
+背	zaa4
+孭	mee1
+次	ci2
+次	ci2
+次	ci2
+蠄蟧	kam1 lo1
+曲	kook3
+凹	nap3
+天	tin1
+坡	po1
+金	gom1
+銀	ngan1
+銅	tong1
+鐵	tit3
+錫	slik3
+硝	slieeu6
+喉嚨	hau4 long1
+姑丈	gu3 zoeng1
+外公	ngoi6 gung2
+姊妹	zi3 mui6
+暗	om2
+辣	laah6
+脆	cui2
+燶	noong2
+盲	meeng1
+答	ddaap3
+聽	teeng2
+𦧷	lem6
+月	njyt6
+匹	pat3
+頭毛	laau6 moou2
+頭鬚	laau6 sloou2
+鼻子	loou4 nang1
+鼻	pi6
+蟬蠐	zam1 zjee1
+鞦韆	cu1 ceen1
+富	hu2
+凍	ddooh3
+人民	nan6 min6
+主席	zy6 ceek3
+同志	toong1 zi2
+工人	goong1 jaa4
+整齊	zing3 caai1
+清楚	cing1 co3
+箱子	sloeng1
+弓	goong1
+水缸	nam6 gaang1
+小指	maau4 bbaai1 zi3
+小指	maau4 ging2 gie1
+婆	paa1
+打	ty4
+踩	nji3
+耳	laa4
+種	zaa1
+叔	ce6
+勿	kai2
+五	ngaa2
+誤	ng4
+踩	njaai3
+板	bban3
+三	slaam1
+發	vaat3
+擔	laap6
+耷	ddap3
+果	maak6
+霧	mo2
+倒	ddou3
+緊	gon3
+穿	bbong1
+湯	toong1
+掬	ngoop3
+簸	bbok3
+做	bbook3
+青	ngeu1
+買	bbeng1
+狹	kep6
+隔	gek3
+衫	joe2
+月	poeng1
+卜	bboek3
+嘸	mi2
+賣	viu4
+仔	gie1
+現	jin4
+撿	lim6
+完	ving4
+九	gu3
+酸	gwaa1
+過	gwo2
+怪	gwaai2
+葵	kwai4
+慣	gwaan2
+裙	kwan4
+𢳂	bbut3
+屈	kwat1
+刮	gwaak3
+打	ty6
+雞	gai1
+踩	njaai3
+麥	mek6
+便	paan6
+榃	tam4
+下	nong4
+春	can1
+𣑦	koong2
+晏	aang2
+堤	jan1
+悟	ng4
+稗	pai6
+臺	slaam4
+兩	man2
+𨂾	naam1
+被	bbaang2
+麻	bbang1
+剎	slaat3
+泥	mat1
+學	haak6
+碎	zoi2
+薅	hou2
+稀	zoom4
+共	koong2
+蛤	goop3
+戳	ddook3
+啃	le2
+揹	bben6
+踮	nem3
+生	sleng1
+蓻	zep3
+乾	ek3
+腬	noe4
+養	coeng6
+記	gi2
+淡	zim2
+園	ving4
+歇	hit3
+接	zip3
+掛	gwaa2
+佝僂	kwaai6
+歸	gwai1
+關	gwaan1
+軍	gwan1
+闊	vut3
+蒜	cyn2
+拜	ngui3
+擔	laap1
+拋	tap1
+濯	zook3
+七	cat3
+縛	gak1
+睦	hap3
+籺	ek3
+𥅈	jep3
+鑼	laa4
+雞	gai1
+朝	nau1
+揀	gam3
+啱	ngaam2
+滾	laang1
+雜	caap6
+米	lap1
+殼	haak3
+腮	sloi1
+膏	gou1
+歐	oou1
+罐	gon2
+講	loom1
+下	nong4
+濃	njoong4
+濯	zook3
+斜	ce4
+貓	meu1
+𥅈	jep3
+額	ngek6
+剁	ddoek3
+婢	zip3
+在	u2
+村	mui4
+扔	kwai6
+細	un2
+抹	mut6
+箸	cy6
+轥	lyn2
+蛋	njoom1
+日	van4
+豎	jang2
+刀	zaa6
+肯	hang3
+滑	vaak6
+洞	poong6
+蝦	long4
+珠	zy1
+攝石	slip3 lin4
+晚季	bbai4 kui2
+鋸	gy2
+灑	pat1
+灑	slaa3
+哋	leh6
+但	ling4
+話	poeng1
+得	lai2
+女	ddoou2
+啲	ddi3
+緊	gong3
+餐	ddong2
+𢴚	nak3
+二	nji6
+兩	man2
+隻	mai6
+阿	aa3
+你哋	mo6 leh6
+我	ngo6
+自家	ci6 gaa1
+大衆	taai6 zong2
+人家	leh6
+昨日	no4 van4
+同點	gy3 ly4
+一	gaa6
+三	slaam1
+三	caam1
+四	sli2
+五	ngaa2
+五	ngo6
+六	slok3
+六	lok1
+七	cat3
+八	bbaak3
+九	gu3
+十	slap1
+零	ling1
+百	bbek3
+千	cin1
+萬	maan6
+第	taai6
+粒	nan1
+樖	po1
+棵	lo1
+筒	mat3
+橛	kek3
+條	tiu1
+腳	goh3
+對	ddoi2
+鋪	pu1
+本	bbun3
+𬻴	lem6
+件	kin6
+斗	ddoou3
+升	slong1
+秤	cong2
+班	bbaan1
+捧	pong3
+照	zeu2
+果龍眼	maak6 pan6
+黃鱔	laang1 slyn4
+敢	goom3
+擰	neeng2
+𪒬	nong1
+擁	ong6
+喐	njook3
+炓	tou6
+𥋴	kam1
+瘸	teu2
+餸	gaa6 ddiu2
+囉	lo6
+啊處	aa3 zu6
+痛	laai1
+老實	loou6 slak1
+驚	geeng1
+直竟	zeek1 geeng2
+好彩	hoi3 coi3
+得餐	lai2 ddong2
+惗	nam3
+講是	loom1 sli6
+知道	tiu6 hou6
+識得	zak3 lai2
+竇	ddoou2
+染	njem6
+呢	ni6
+就是	zu6 sli6
+就	zu6
+噶吖	giaa2l
+做乜	bbook3 mak3
+幾時	gi4 sli6
+啊這	aa4 zi6
+漚仔	oou2 leek1
+一聲	gaa6 slong1
+閒時	heng1 sli1
+乘勢	sleeng1 slai2
+呀	aa4
+䊦	ek3
+
+緊	gong3	
+緊	gong3	
+試試	sli6 sli6	
+一路	gaa6 lo6	
+啱啱	ngaam2 ngaam2	
+會	jau1	
+會	oi2	
+去	bbai1	
+罷	bbaai3l	
+過	gwo2	
+起身	lok1 slan1	
+過	gwo2	
+一便	gaa6 pen6	
+得	lai2	
+緊	gong3	
+見	cang1	
+完	laang2	
+歐	oou1	
+愛	oi2	
+至	zi6	
+就	zu6	
+即是	zak3 sli6	
+僅僅	laam2 laam2	
+是得	sli6 lai2	
+加	gaa2	
+也	jaa6	
+都	ddo1	
+又	ju6	
+又	lu6	
+嘸	mi2	
+嘸	mi2	
+嘸有	mi2 mi4	
+嘸	mi2	
+未	leng4	
+勿	kai2	
+咪	ma4	
+是	sli6	
+在	u2	
+有	mi4	
+噶	ga4	
+啊	aa6	
+啊	aa3
+分	van1	
+同	toong1	
+共	koong2	
+撈	laau1
+似	ci6	
+學	haak6	
+分	van1	
+分	van1	
+分	van1	
+使到	slai3 tang4	
+歐	oou1	
+擰	neeng2	
+使	slai3	
+歐	oou1	
+啊	aa2	
+啊是	aa2 sli6	
+一是	gaa6 sli6	
+邊	ly6	
+同點	gy3 ly6	
+幾	gi3	
+呢	ni6	
+咁	gaa6	
+幾	gi3	
+好	hou3	
+時	ho3	
+時	vo3	
+時	sli1
+埞	slan6	
+啊	aa3	
+幾	gi3	
+樣	ceeng1	
+隻	to1	
+個	gaai2	
+個	gaa6
+啲	ddi3	
+嘸理	mi2 li4	
+左	zo3	
+右	ju4	
+上	sloeng6	
+上邊	sloeng6 paan6	
+下	haa6	
+㞘	ddook3	
+裏	laau6	
+啊裏	aa3 laau6	
+外	ngoi4	
+啲出	li4 ook3	
+前	cin4	
+後面	hau4	
+啲背	li4 bbui2	
+便	paan6	
+中間心	long1 ddaa2 sloom1	
+爲了	vai6 teek6	
+在	u2	
+走	leu4	
+到	tang4	
+入	lu6	
+來	maa4	
+起	lok1	
+上	lok1	
+下	nong4	
+回	leeng1	
+着	teek6	
+去	bbai1	
+到	tang4	
+跟着是	gan1 zak3 sli1	
+跟手	gan1 maau4	
+先面	gu2 naa2	
