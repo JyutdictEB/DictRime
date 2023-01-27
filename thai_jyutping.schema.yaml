@@ -1,0 +1,280 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: Thai_Jyutping
+  name: 泰粵拼
+  version: "1.0"
+  author:
+    - Khuy
+  description: |
+    基于香港語言學會粵語拼音方案
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 番文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 深筆, 简体 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+  - name: zh_hk                
+    states: [ 臺, 港]             
+    reset: 1                      #默认开启
+  - name: emoji_cn                #Emoji开关
+    states: [ 〇, 😊]             #显示在状态栏的图标
+    reset: 0                      #默认关闭
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - reverse_lookup_translator
+  filters:
+    - simplifier@emoji_cn         #Emoji滤镜
+    - simplifier@zh_hk         
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcbaQWERTYUIOPASDFGHJKLZXCVBNM
+  delimiter: " '"
+  algebra:
+    - xform/RD/ฒ/
+    - derive/^.+([SRDL])$//
+    - xform/ฒ/RD/
+
+translator:
+  dictionary: thai_jyutping
+  spelling_hints: 5
+  preedit_format:
+    - "xform QK ๚"
+    - "xform qk ๚"
+    - "xform dnK ┼"
+    - "xform dnk ┼"
+    - "xform jmg ๎"
+    - "xform lYY ๎"
+    - "xform lyy ฺ"
+    - "xform PT ฺ"
+    - "xform Km ๎"
+    - "xform km ฺ"
+    - "xform Mj ฯ"
+    - "xform TK ์"
+    - "xform nh ํ"
+    - "xform Fm ๏"
+    - "xform fm ๏"
+    - "xform dg ๏"
+    - "xform jm ๆ"
+    - "xform RN ฎ"
+    - "xform Rd ฏ"
+    - "xform Rt ฐ"
+    - "xform RT ฑ"
+    - "xform RD ฒ"
+    - "xform Rn ณ"
+    - "xform SJ ศ"
+    - "xform SR ษ"
+    - "xform SL ฬ"
+    - "xform Rw ฤ"
+    - "xform Lw ฦ"
+    - "xform RW ฤๅ"
+    - "xform LW ฦๅ"
+    - "xform OW ๅ"
+    - "xform KH ฆ"
+    - "xform CH ฌ"
+    - "xform TH ธ"
+    - "xform PH ภ"
+    - "xform q า"
+    - "xform Q อ"
+    - "xform w ว"
+    - "xform W ใ"
+    - "xform e เ"
+    - "xform ae แ"
+    - "xform E ไ"
+    - "xform r ร"
+    - "xform R ้"
+    - "xform t ถ"
+    - "xform T ท"
+    - "xform y ึ"
+    - "xform Y ื"
+    - "xform u ุ"
+    - "xform U ู"
+    - "xform i ิ"
+    - "xform I ี"
+    - "xform o อ"
+    - "xform O โ"
+    - "xform p ผ"
+    - "xform P พ"
+    - "xform a ั"
+    - "xform A ะ"
+    - "xform s ส"
+    - "xform S ่"
+    - "xform d ต"
+    - "xform D ๊"
+    - "xform f ฝ"
+    - "xform F ฟ"
+    - "xform g ก"
+    - "xform G ็"
+    - "xform h ห"
+    - "xform H ฮ"
+    - "xform j ย"
+    - "xform J ญ"
+    - "xform k ข"
+    - "xform K ค"
+    - "xform l ล"
+    - "xform L ๋"
+    - "xform z จ"
+    - "xform Z ซ"
+    - "xform x ฃ"
+    - "xform X ฅ"
+    - "xform c ฉ"
+    - "xform C ช"
+    - "xform v ง"
+    - "xform V ำ"
+    - "xform b ป"
+    - "xform B –"
+    - "xform n น"
+    - "xform N ด"
+    - "xform m ม"
+    - "xform M บ"
+#    - "xform (^.+)([ไ|ใ|โ|แ|เ]) $2$1"
+  comment_format:
+    - "xform QK ๚"
+    - "xform qk ๚"
+    - "xform dnK ┼"
+    - "xform dnk ┼"
+    - "xform jmg ๎"
+    - "xform lYY ๎"
+    - "xform lyy ฺ"
+    - "xform PT ฺ"
+    - "xform Km ๎"
+    - "xform km ฺ"
+    - "xform Mj ฯ"
+    - "xform TK ์"
+    - "xform nh ํ"
+    - "xform Fm ๏"
+    - "xform fm ๏"
+    - "xform dg ๏"
+    - "xform jm ๆ"
+    - "xform RN ฎ"
+    - "xform Rd ฏ"
+    - "xform Rt ฐ"
+    - "xform RT ฑ"
+    - "xform RD ฒ"
+    - "xform Rn ณ"
+    - "xform SJ ศ"
+    - "xform SR ษ"
+    - "xform SL ฬ"
+    - "xform Rw ฤ"
+    - "xform Lw ฦ"
+    - "xform RW ฤๅ"
+    - "xform LW ฦๅ"
+    - "xform OW ๅ"
+    - "xform KH ฆ"
+    - "xform CH ฌ"
+    - "xform TH ธ"
+    - "xform PH ภ"
+    - "xform q า"
+    - "xform Q อ"
+    - "xform w ว"
+    - "xform W ใ"
+    - "xform e เ"
+    - "xform ae แ"
+    - "xform E ไ"
+    - "xform r ร"
+    - "xform R ้"
+    - "xform t ถ"
+    - "xform T ท"
+    - "xform y ึ"
+    - "xform Y ื"
+    - "xform u ุ"
+    - "xform U ู"
+    - "xform i ิ"
+    - "xform I ี"
+    - "xform o อ"
+    - "xform O โ"
+    - "xform p ผ"
+    - "xform P พ"
+    - "xform a ั"
+    - "xform A ะ"
+    - "xform s ส"
+    - "xform S ่"
+    - "xform d ต"
+    - "xform D ๊"
+    - "xform f ฝ"
+    - "xform F ฟ"
+    - "xform g ก"
+    - "xform G ็"
+    - "xform h ห"
+    - "xform H ฮ"
+    - "xform j ย"
+    - "xform J ญ"
+    - "xform k ข"
+    - "xform K ค"
+    - "xform l ล"
+    - "xform L ๋"
+    - "xform z จ"
+    - "xform Z ซ"
+    - "xform x ฃ"
+    - "xform X ฅ"
+    - "xform c ฉ"
+    - "xform C ช"
+    - "xform v ง"
+    - "xform V ำ"
+    - "xform b ป"
+    - "xform B –"
+    - "xform n น"
+    - "xform N ด"
+    - "xform m ม"
+    - "xform M บ"
+
+zh_hk:
+  option_name: zh_hk
+  opencc_config: t2hk.json
+
+#Emoji滤镜配置
+emoji_cn:
+  opencc_config: emoji.json       #Emoji词典配置文件
+  option_name: emoji_cn           #与状态栏开关的名称一致
+  tips: all                       #开启注释
+
+#reverse_lookup:
+#  dictionary: luna_pinyin
+#  prefix: "`"
+#  suffix: "'"
+#  tips: 〔拼音〕
+#  preedit_format:
+#    - xform/([nl])v/$1ü/
+#    - xform/([nl])ue/$1üe/
+#    - xform/([jqxy])v/$1u/
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+  bindings: 
+  - { when: has_menu, accept: asterisk, send: Shift+Return}
+  - { when: has_menu, accept: "#", toggle: emoji_cn }
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[a-z]*'?$"
+    punct: '^/([0-9]0?|[a-z]+)$'
