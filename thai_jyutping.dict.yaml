@@ -2,11 +2,11 @@
 # encoding: utf-8
 #
 # Thai_Jyutping - 欽拼
-#
+# có lẽ sẽ dùng regex nếu có từ điển
 
 ---
 name: Thai_Jyutping
-version: "220704"
+version: "230202"
 sort: original
 use_preset_vocabulary: true
 max_phrase_length: 9
@@ -326,6 +326,57 @@ min_phrase_weight: 100
 ใฬ	SLW	1
 ไฬ	SLE	1
 โฬ	SLO	1
+
+แหง	hvae	1
+เหง	hve	1
+ใหง	hvW	1
+ไหง	hvE	1
+โหง	hvO	1
+แหญ	hJae	1
+เหญ	hJe	1
+ใหญ	hJW	1
+ไหญ	hJE	1
+โหญ	hJO	1
+แหณ	hRnae	1
+เหณ	hRne	1
+ใหณ	hRnW	1
+ไหณ	hRnE	1
+โหณ	hRnO	1
+แหน	hnae	1
+เหน	hne	1
+ใหน	hnW	1
+ไหน	hnE	1
+โหน	hnO	1
+แหม	hmae	1
+เหม	hme	1
+ใหม	hmW	1
+ไหม	hmE	1
+โหม	hmO	1
+แหย	hjae	1
+เหย	hje	1
+ใหย	hjW	1
+ไหย	hjE	1
+โหย	hjO	1
+แหร	hrae	1
+เหร	hre	1
+ใหร	hrW	1
+ไหร	hrE	1
+โหร	hrO	1
+แหล	hlae	1
+เหล	hle	1
+ใหล	hlW	1
+ไหล	hlE	1
+โหล	hlO	1
+แหว	hwae	1
+เหว	hwe	1
+ใหว	hwW	1
+ไหว	hwE	1
+โหว	hwO	1
+แหฬ	hSLae	1
+เหฬ	hSLe	1
+ใหฬ	hSLW	1
+ไหฬ	hSLE	1
+โหฬ	hSLO	1
 
 แกว	gwae	1
 เกว	gwe	1
