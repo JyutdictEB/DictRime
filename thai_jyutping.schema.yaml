@@ -1,10 +1,12 @@
 # Rime schema
 # encoding: utf-8
+#เออ vs เอ็อ
+# X–่..., X–็: X gonq
 
 schema:
   schema_id: Thai_Jyutping
   name: 泰粵拼
-  version: "1.0"
+  version: "1.1"
   author:
     - Khuy
   description: |
@@ -57,9 +59,13 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaQWERTYUIOPASDFGHJKLZXCVBNM
   delimiter: " '"
   algebra:
+    - derive/eq/aw/
+    - derive/ei/oe/
     - xform/RD/ฒ/
+    - xform/Rn/ณ/
     - derive/^.+([SRDL])$//
     - xform/ฒ/RD/
+    - xform/ณ/Rn/
 
 translator:
   dictionary: thai_jyutping
@@ -91,11 +97,11 @@ translator:
     - "xform SJ ศ"
     - "xform SR ษ"
     - "xform SL ฬ"
-    - "xform Rw ฤ"
-    - "xform Lw ฦ"
-    - "xform RW ฤๅ"
-    - "xform LW ฦๅ"
-    - "xform OW ๅ"
+    - "xform Ry ฤ"
+    - "xform Ly ฦ"
+    - "xform RY ฤๅ"
+    - "xform LY ฦๅ"
+    - "xform OY ๅ"
     - "xform KH ฆ"
     - "xform CH ฌ"
     - "xform TH ธ"
@@ -181,11 +187,11 @@ translator:
     - "xform SJ ศ"
     - "xform SR ษ"
     - "xform SL ฬ"
-    - "xform Rw ฤ"
-    - "xform Lw ฦ"
-    - "xform RW ฤๅ"
-    - "xform LW ฦๅ"
-    - "xform OW ๅ"
+    - "xform Ry ฤ"
+    - "xform Ly ฦ"
+    - "xform RY ฤๅ"
+    - "xform LY ฦๅ"
+    - "xform OY ๅ"
     - "xform KH ฆ"
     - "xform CH ฌ"
     - "xform TH ธ"
