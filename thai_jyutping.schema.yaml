@@ -6,7 +6,7 @@
 schema:
   schema_id: Thai_Jyutping
   name: 泰粵拼
-  version: "1.1"
+  version: "2.1"
   author:
     - Khuy
   description: |
@@ -50,22 +50,113 @@ engine:
     - script_translator
     - reverse_lookup_translator
   filters:
-    - simplifier@emoji_cn         #Emoji滤镜
-    - simplifier@zh_hk         
+    - simplifier@emoji_cn         #Emoji滤镜       
     - simplifier
+    - simplifier@zh_hk  
     - uniquifier
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaQWERTYUIOPASDFGHJKLZXCVBNM
   delimiter: " '"
   algebra:
+    - xform/([ptkh])(10)/$1,/
+    - "xform/([0-9,])h/$1/" 
+    - xform/v(\S*[0-9,])/w$1/ #gs
+    - xform/bb(\S*[0-9,])/M$1/ #gs
+    - xform/dd(\S*[0-9,])/N$1/ #gs
+    - xform/oo(\S*[0-9,])/O$1/ #gs
+    - xform/ee(\S*[0-9,])/e$1/ #gs
+    - xform/yu(\S*[0-9,])/y$1/ #fw
+    - xform/o([mp])(\S*[0-9,])/OG$1$2/ #fw, <ɵ> (as in Jing'waa) or OG (short, *o)
+    - xform/ou(\S*[0-9,])/O$1/ #fw, <ɵ> (as in Jing'waa) or <ɵ>u or O (long, *ɒw)
+    - xform/eo(\S*[0-9,])/<ɵ>$1/ #fw, <ʊ> (as in Jing'waa) or <ɵ>
+    - xform/oe(\S*[0-9,])/<œ>$1/ #fw
+    - xform/e(\S*[0-9,])/<ε>$1/ #fw
+    - xform/<ɵ>(\S*[0-9,])/eo$1/ #fw
+    - xform/<œ>(\S*[0-9,])/oe$1/ #fw
+    - xform/([zcs])i([0-9,])/$1<ɯ>$2/ #fw
+    - xform/<ɯ>([0-9,])/Y$1/ #fw
+    - xform/zh(\S+[0-9,])/Rd$1/ #fw
+    - xform/ch(\S+[0-9,])/Rt$1/ #fw
+    - xform/sh(\S+[0-9,])/SR$1/ #fw
+    - xform/nj(\S*[0-9,])/J$1/
+    - xform/ng(\S*[0-9,])/v$1/
+    - xform/(b\S+)4/$1<๖>/ #hz
+    - xform/(d\S+)4/$1<๖>/ #hz
+    - xform/(g\S+)4/$1<๖>/ #hz
+    - xform/(z\S+)4/$1<๖>/ #hz
+    - xform/<๖>/6/ #regex rime
+    - xform/p(\S+[4569,])/P$1/
+    - xform/f(\S+[4569,])/F$1/
+    - xform/t(\S+[4569,])/T$1/
+    - xform/Rt(\S+[4569,])/RT$1/ #fw
+    - xform/k(\S+[4569,])/K$1/
+    - xform/c(\S+[4569,])/C$1/
+    - xform/h(\S+[4569,])/X$1/
+    - xform/SR(\S+[4569,])/RD$1/ #fw
+    - xform/s(\S+[4569,])/Z$1/
+    - xform/b(\S+[4569,])/P$1/
+    - xform/d(\S+[4569,])/T$1/
+    - xform/Rd(\S+[4569,])/RT$1/ #fw
+    - xform/g(\S+[4569,])/K$1/
+    - xform/z(\S+[4569,])/C$1/
+    - xform/p([0-9,])/M$1/
+    - xform/t([0-9,])/N$1/
+    - xform/k([0-9,])/g$1/
+    - xform/h([0-9,])/A$1/
+    - derive/M([0-9,])/p$1/
+    - derive/N([0-9,])/t$1/
+    - derive/g([0-9,])/k$1/
+    - derive/A([0-9,])/h$1/
+    - xform/aa(\S*[0-9,])/q$1/
+    - xform/a([0-9,])/A$1/
+    - xform/([Aaqe<ε>iIuUyYoOEW])u([0-9,])/$1w$2/
+    - xform/([Aaqe<ε>iIuUyYoOEW])i([0-9,])/$1j$2/
+    - xform/^([Aaqe<ε>iIuUyYoOEW]\S*[0-9,])/Q$1/
+    #- xform/^([nmlvJrw]\S+)2$/$1<๕>/ #hz
+    #- xform/<๕>/5/ #regex rime
+    - xform/^([nmlvJrw]\S+[123])/h$1/
+    - xform/^(j\S+[123])/Q$1/
+    - xform/sl(\S+[0-9,])/SL$1/ #hz
+    - xform/am([0-9,])/V$1/
+    - xform/aj(\S*[0-9])/E$1/
+    - xform/i(\S*[0-9,])/I$1/
+    - xform/I([vgk][0-9,])/<ɪ>$1/ #variant preparation for ik
+    #- xform/<ɪ>(\S*[0-9,])/i$1/ #variant: ik as –ิ
+    - derive/<ɪ>(\S*[0-9,])/i$1/ #derive variant
+    - xform/<ɪ>(\S*[0-9,])/eG$1/ #variant: ik as เ–็
+    - xform/<ε>(\S*[0-9,])/ae$1/ #variant: e as แ–
+    - xform/u(\S*[0-9,])/U$1/
+    - xform/U([vgk][0-9,])/<ʊ>$1/ #variant preparation for uk
+    #- xform/U([vgk][0-9,])/u$1/ #variant: uk as –ุ
+    - derive/<ʊ>(\S*[0-9,])/u$1/ #derive variant
+    - xform/<ʊ>(\S*[0-9,])/OG$1/ #variant: uk as โ–ะ
+    - xform/y(\S*[0-9,])/Yo$1/
+    - xform/OG([0-9,])/OA$1/ #thai combi โ–ะ
+    - derive/OG(\S+[0-9,])/$1/ #thai combi erase โ–ะ
+    - derive/Yo(\S*[0-9,])/Y$1/ #fw variant, e.g. Yn->Yon
     - derive/eq/aw/
+    - derive/eo/oe/
+    - derive/ei/eo/
     - derive/ei/oe/
-    - xform/RD/ฒ/
-    - xform/Rn/ณ/
-    - derive/^.+([SRDL])$//
-    - xform/ฒ/RD/
-    - xform/ณ/Rn/
+    - derive/E/aj/
+    - fuzz/^(\S+)[0-9,]$/$1/      # 拼簡聲調
+    - derive/^([gkK]w).+$/$1/      # 聲母
+    - derive/^(R[dtTD]).+$/$1/      # 聲母
+    - derive/^([a-zA-Z]).+[0-9,]$/$1/      # 拼簡字首
+    #- abbrev/^([a-z]).+[0-9,]$/$1/      # 拼簡字首
+    - "xform/0/L/"
+    - "xform/1//"
+    - "xform/,/10/"
+    - "xform/2/R/"
+    - "xform/3/S/"
+    - "xform/4//"
+    - "xform/5/R/"
+    - "xform/6/S/"
+    - "xform/7//"
+    - "xform/8/S/"
+    - "xform/9//"
+    - "xform/10/S/"
 
 translator:
   dictionary: thai_jyutping
@@ -76,11 +167,11 @@ translator:
     - "xform dnK ┼"
     - "xform dnk ┼"
     - "xform jmg ๎"
-    - "xform lYY ๎"
-    - "xform lyy ฺ"
+    - "xform lYY ฯลฯ"
+    - "xform lyy ฯลฯ"
     - "xform PT ฺ"
-    - "xform Km ๎"
-    - "xform km ฺ"
+    - "xform Km ๛"
+    - "xform km ๛"
     - "xform Mj ฯ"
     - "xform TK ์"
     - "xform nh ํ"
@@ -88,12 +179,12 @@ translator:
     - "xform fm ๏"
     - "xform dg ๏"
     - "xform jm ๆ"
-    - "xform RN ฎ"
+    - "xform RRN ฎ"
     - "xform Rd ฏ"
     - "xform Rt ฐ"
     - "xform RT ฑ"
     - "xform RD ฒ"
-    - "xform Rn ณ"
+    - "xform RRn ณ"
     - "xform SJ ศ"
     - "xform SR ษ"
     - "xform SL ฬ"
@@ -106,12 +197,12 @@ translator:
     - "xform CH ฌ"
     - "xform TH ธ"
     - "xform PH ภ"
+    - "xform ae แ"
     - "xform q า"
     - "xform Q อ"
     - "xform w ว"
     - "xform W ใ"
     - "xform e เ"
-    - "xform ae แ"
     - "xform E ไ"
     - "xform r ร"
     - "xform R ้"
@@ -159,18 +250,110 @@ translator:
     - "xform N ด"
     - "xform m ม"
     - "xform M บ"
+    - xform/ //
 #    - "xform (^.+)([ไ|ใ|โ|แ|เ]) $2$1"
   comment_format:
+    - xform/([ptkh])(10)/$1,/
+    - "xform/([0-9,])h/$1/"
+    - xform/v(\S*[0-9,])/w$1/ #gs
+    - xform/bb(\S*[0-9,])/M$1/ #gs
+    - xform/dd(\S*[0-9,])/N$1/ #gs
+    - xform/oo(\S*[0-9,])/O$1/ #gs
+    - xform/ee(\S*[0-9,])/e$1/ #gs
+    - xform/yu(\S*[0-9,])/y$1/ #fw
+    - xform/o([mp])(\S*[0-9,])/OG$1$2/ #fw, <ɵ> (as in Jing'waa) or OG (short, *o)
+    - xform/ou(\S*[0-9,])/O$1/ #fw, <ɵ> (as in Jing'waa) or <ɵ>u or O (long, *ɒw)
+    - xform/eo(\S*[0-9,])/<ɵ>$1/ #fw, <ʊ> (as in Jing'waa) or <ɵ>
+    - xform/oe(\S*[0-9,])/<œ>$1/ #fw
+    - xform/e(\S*[0-9,])/<ɛ>$1/ #fw
+    - xform/<ɵ>(\S*[0-9,])/eo$1/ #fw
+    - xform/<œ>(\S*[0-9,])/oe$1/ #fw
+    - xform/([zcs])i([0-9,])/$1<ɯ>$2/ #fw
+    - xform/zh(\S+[0-9,])/Rd$1/ #fw
+    - xform/ch(\S+[0-9,])/Rt$1/ #fw
+    - xform/sh(\S+[0-9,])/SR$1/ #fw
+    - xform/nj(\S*[0-9,])/J$1/
+    - xform/ng(\S*[0-9,])/v$1/
+    #- xform/(b\S+)4/$1<๖>/ #hz
+    #- xform/(d\S+)4/$1<๖>/ #hz
+    #- xform/(g\S+)4/$1<๖>/ #hz
+    #- xform/(z\S+)4/$1<๖>/ #hz
+    #- xform/<๖>/6/ #regex rime
+    - xform/p(\S+[4569,])/P$1/
+    - xform/f(\S+[4569,])/F$1/
+    - xform/t(\S+[4569,])/T$1/
+    - xform/k(\S+[4569,])/K$1/
+    - xform/c(\S+[4569,])/C$1/
+    - xform/h(\S+[4569,])/X$1/
+    - xform/SR(\S+[4569,])/RD$1/ #fw
+    - xform/s(\S+[4569,])/Z$1/
+    - xform/b(\S+[4569,])/P$1/
+    - xform/d(\S+[4569,])/T$1/
+    - xform/g(\S+[4569,])/K$1/
+    - xform/z(\S+[4569,])/C$1/
+    - xform/p([0-9,])/M$1/
+    - xform/t([0-9,])/N$1/
+    - xform/k([0-9,])/g$1/
+    - xform/h([0-9,])/A$1/
+    - xform/aa(\S*[0-9,])/q$1/
+    - xform/a([0-9,])/A$1/
+    - xform/([Aaqe<ɛ>iIuUyYoOEW])u([0-9,])/$1w$2/
+    - xform/([Aaqe<ɛ>iIuUyYoOEW])i([0-9,])/$1j$2/
+    - xform/^([Aaqe<ɛ>iIuUyYoOEW]\S*[0-9,])/Q$1/
+    #- xform/^([nmlvJrw]\S+)2/$1<๕>/ #hz
+    #- xform/<๕>/5/ #regex rime
+    - xform/^([nmlvJrw]\S+[123])/h$1/
+    - xform/^(j\S+[123])/Q$1/
+    - xform/sl(\S+[0-9,])/SL$1/
+    - xform/am([0-9,])/V$1/
+    - xform/aj(\S*[0-9])/E$1/
+    - xform/i(\S*[0-9,])/I$1/
+    - xform/I([vgk][0-9,])/<ɪ>$1/ #variant preparation for ik
+    #- xform/<ɪ>(\S*[0-9,])/i$1/ #variant: ik as –ิ
+    - xform/<ɪ>(\S*[0-9,])/eG$1/ #variant: ik as เ–็
+    - xform/u(\S*[0-9,])/U$1/
+    - xform/U([vgk][0-9,])/<ʊ>$1/ #variant preparation for uk
+    #- xform/<ʊ>(\S*[0-9,])/u$1/ #variant: uk as –ุ
+    - xform/<ʊ>(\S*[0-9,])/OG$1/ #variant: uk as โ–ะ
+    - xform/y(\S*[0-9,])/Y$1/ #dif from speller
+    - xform/Y([0-9,])/Yo$1/ #thai combi
+    - xform/<ɯ>([0-9,])/Y$1/ #fw
+    - xform/^([mnv])([0-9,])/$1ฺ$2/ #comment_format
+    - xform/([^aqe<ɛ>iIuUyYoOEWjwG][mnv])([0-9,])/$1ฺ$2/ #comment_format
+    - xform/OG([0-9,])/OA$1/ #thai combi โ–ะ
+    - xform/OG(\S+[0-9,])/$1/ #thai combi erase โ–ะ
+    - xform/h(<ɛ>|e|O|E|W)([nmlvJrw][0-9,])/hฺ$1$2/ #comment_format
+    - xform/eo(\S*[0-9,])/ei$1/ #thai combi
+    - xform/aw([0-9,])/eq$1/ #thai combi
+    #- xform/ow([0-9,])/O$1/ #thai combi
+    - xform/oe([0-9,])/Yeo$1/ #thai combi, special shifting
+    - xform/oe(\S+[0-9,])/Yeo$1/ #thai combi, special shifting
+    - xform/oA([0-9,])/eqA$1/ #thai combi
+    - xform/([lwr]?[ae<ɛ>iuyOEW]?)([oqj]?[mnvVMNgAjw]?)([0-9,])/$1$3$2/ #thai order 
+    - xform/(\S+)(<ɛ>|e|O|E|W)(\S*[0-9,])/$2$1$3/ #thai order pawRCI 
+    - xform/<ɛ>(\S*[0-9,])/ae$1/ #thai <ɛ>; variant: e as แ–
+    - "xform/0/L/"
+    - "xform/1//"
+    - "xform/,/10/"
+    - "xform/2/R/"
+    - "xform/3/S/"
+    - "xform/4//"
+    - "xform/5/R/"
+    - "xform/6/S/"
+    - "xform/7//"
+    - "xform/8/S/"
+    - "xform/9//"
+    - "xform/10/S/"
     - "xform QK ๚"
     - "xform qk ๚"
     - "xform dnK ┼"
     - "xform dnk ┼"
     - "xform jmg ๎"
-    - "xform lYY ๎"
-    - "xform lyy ฺ"
+    - "xform lYY ฯลฯ"
+    - "xform lyy ฯลฯ"
     - "xform PT ฺ"
-    - "xform Km ๎"
-    - "xform km ฺ"
+    - "xform Km ๛"
+    - "xform km ๛"
     - "xform Mj ฯ"
     - "xform TK ์"
     - "xform nh ํ"
@@ -178,12 +361,12 @@ translator:
     - "xform fm ๏"
     - "xform dg ๏"
     - "xform jm ๆ"
-    - "xform RN ฎ"
+    - "xform RRN ฎ"
     - "xform Rd ฏ"
     - "xform Rt ฐ"
     - "xform RT ฑ"
     - "xform RD ฒ"
-    - "xform Rn ณ"
+    - "xform RRn ณ"
     - "xform SJ ศ"
     - "xform SR ษ"
     - "xform SL ฬ"
@@ -196,12 +379,12 @@ translator:
     - "xform CH ฌ"
     - "xform TH ธ"
     - "xform PH ภ"
+    - "xform ae แ"
     - "xform q า"
     - "xform Q อ"
     - "xform w ว"
     - "xform W ใ"
     - "xform e เ"
-    - "xform ae แ"
     - "xform E ไ"
     - "xform r ร"
     - "xform R ้"
@@ -249,6 +432,9 @@ translator:
     - "xform N ด"
     - "xform m ม"
     - "xform M บ"
+    - xform/ //
+
+
 
 zh_hk:
   option_name: zh_hk
@@ -260,24 +446,208 @@ emoji_cn:
   option_name: emoji_cn           #与状态栏开关的名称一致
   tips: all                       #开启注释
 
-#reverse_lookup:
-#  dictionary: luna_pinyin
-#  prefix: "`"
-#  suffix: "'"
-#  tips: 〔拼音〕
-#  preedit_format:
-#    - xform/([nl])v/$1ü/
-#    - xform/([nl])ue/$1üe/
-#    - xform/([jqxy])v/$1u/
+reverse_lookup:
+  dictionary: luna_pinyin
+  prefix: "`"
+  suffix: "'"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+  comment_format:
+    - xform/([ptkh])(10)/$1,/
+    - "xform/([0-9,])h/$1/"
+    - xform/v(\S*[0-9,])/w$1/ #gs
+    - xform/bb(\S*[0-9,])/M$1/ #gs
+    - xform/dd(\S*[0-9,])/N$1/ #gs
+    - xform/oo(\S*[0-9,])/O$1/ #gs
+    - xform/ee(\S*[0-9,])/e$1/ #gs
+    - xform/yu(\S*[0-9,])/y$1/ #fw
+    - xform/o([mp])(\S*[0-9,])/OG$1$2/ #fw, <ɵ> (as in Jing'waa) or OG (short, *o)
+    - xform/ou(\S*[0-9,])/O$1/ #fw, <ɵ> (as in Jing'waa) or <ɵ>u or O (long, *ɒw)
+    - xform/eo(\S*[0-9,])/<ɵ>$1/ #fw, <ʊ> (as in Jing'waa) or <ɵ>
+    - xform/oe(\S*[0-9,])/<œ>$1/ #fw
+    - xform/e(\S*[0-9,])/<ɛ>$1/ #fw
+    - xform/<ɵ>(\S*[0-9,])/eo$1/ #fw
+    - xform/<œ>(\S*[0-9,])/oe$1/ #fw
+    - xform/([zcs])i([0-9,])/$1<ɯ>$2/ #fw
+    - xform/zh(\S+[0-9,])/Rd$1/ #fw
+    - xform/ch(\S+[0-9,])/Rt$1/ #fw
+    - xform/sh(\S+[0-9,])/SR$1/ #fw
+    - xform/nj(\S*[0-9,])/J$1/
+    - xform/ng(\S*[0-9,])/v$1/
+    #- xform/(b\S+)4/$1<๖>/ #hz
+    #- xform/(d\S+)4/$1<๖>/ #hz
+    #- xform/(g\S+)4/$1<๖>/ #hz
+    #- xform/(z\S+)4/$1<๖>/ #hz
+    #- xform/<๖>/6/ #regex rime
+    - xform/p(\S+[4569,])/P$1/
+    - xform/f(\S+[4569,])/F$1/
+    - xform/t(\S+[4569,])/T$1/
+    - xform/k(\S+[4569,])/K$1/
+    - xform/c(\S+[4569,])/C$1/
+    - xform/h(\S+[4569,])/X$1/
+    - xform/SR(\S+[4569,])/RD$1/ #fw
+    - xform/s(\S+[4569,])/Z$1/
+    - xform/b(\S+[4569,])/P$1/
+    - xform/d(\S+[4569,])/T$1/
+    - xform/g(\S+[4569,])/K$1/
+    - xform/z(\S+[4569,])/C$1/
+    - xform/p([0-9,])/M$1/
+    - xform/t([0-9,])/N$1/
+    - xform/k([0-9,])/g$1/
+    - xform/h([0-9,])/A$1/
+    - xform/aa(\S*[0-9,])/q$1/
+    - xform/a([0-9,])/A$1/
+    - xform/([Aaqe<ɛ>iIuUyYoOEW])u([0-9,])/$1w$2/
+    - xform/([Aaqe<ɛ>iIuUyYoOEW])i([0-9,])/$1j$2/
+    - xform/^([Aaqe<ɛ>iIuUyYoOEW]\S*[0-9,])/Q$1/
+    #- xform/^([nmlvJrw]\S+)2/$1<๕>/ #hz
+    #- xform/<๕>/5/ #regex rime
+    - xform/^([nmlvJrw]\S+[123])/h$1/
+    - xform/^(j\S+[123])/Q$1/
+    - xform/sl(\S+[0-9,])/SL$1/
+    - xform/am([0-9,])/V$1/
+    - xform/aj(\S*[0-9])/E$1/
+    - xform/i(\S*[0-9,])/I$1/
+    - xform/I([vgk][0-9,])/<ɪ>$1/ #variant preparation for ik
+    #- xform/<ɪ>(\S*[0-9,])/i$1/ #variant: ik as –ิ
+    - xform/<ɪ>(\S*[0-9,])/eG$1/ #variant: ik as เ–็
+    - xform/u(\S*[0-9,])/U$1/
+    - xform/U([vgk][0-9,])/<ʊ>$1/ #variant preparation for uk
+    #- xform/<ʊ>(\S*[0-9,])/u$1/ #variant: uk as –ุ
+    - xform/<ʊ>(\S*[0-9,])/OG$1/ #variant: uk as โ–ะ
+    - xform/y(\S*[0-9,])/Y$1/ #dif from speller
+    - xform/Y([0-9,])/Yo$1/ #thai combi
+    - xform/<ɯ>([0-9,])/Y$1/ #fw
+    - xform/^([mnv])([0-9,])/$1ฺ$2/ #comment_format
+    - xform/([^aqe<ɛ>iIuUyYoOEWjwG][mnv])([0-9,])/$1ฺ$2/ #comment_format
+    - xform/OG([0-9,])/OA$1/ #thai combi โ–ะ
+    - xform/OG(\S+[0-9,])/$1/ #thai combi erase โ–ะ
+    - xform/h(<ɛ>|e|O|E|W)([nmlvJrw][0-9,])/hฺ$1$2/ #comment_format
+    - xform/eo(\S*[0-9,])/ei$1/ #thai combi
+    - xform/aw([0-9,])/eq$1/ #thai combi
+    #- xform/ow([0-9,])/O$1/ #thai combi
+    - xform/oe([0-9,])/Yeo$1/ #thai combi, special shifting
+    - xform/oe(\S+[0-9,])/Yeo$1/ #thai combi, special shifting
+    - xform/oA([0-9,])/eqA$1/ #thai combi
+    - xform/([lwr]?[ae<ɛ>iuyOEW]?)([oqj]?[mnvVMNgAjw]?)([0-9,])/$1$3$2/ #thai order 
+    - xform/(\S+)(<ɛ>|e|O|E|W)(\S*[0-9,])/$2$1$3/ #thai order pawRCI 
+    - xform/<ɛ>(\S*[0-9,])/ae$1/ #thai <ɛ>; variant: e as แ–
+    - "xform/0/L/"
+    - "xform/1//"
+    - "xform/,/10/"
+    - "xform/2/R/"
+    - "xform/3/S/"
+    - "xform/4//"
+    - "xform/5/R/"
+    - "xform/6/S/"
+    - "xform/7//"
+    - "xform/8/S/"
+    - "xform/9//"
+    - "xform/10/S/"
+    - "xform QK ๚"
+    - "xform qk ๚"
+    - "xform dnK ┼"
+    - "xform dnk ┼"
+    - "xform jmg ๎"
+    - "xform lYY ฯลฯ"
+    - "xform lyy ฯลฯ"
+    - "xform PT ฺ"
+    - "xform Km ๛"
+    - "xform km ๛"
+    - "xform Mj ฯ"
+    - "xform TK ์"
+    - "xform nh ํ"
+    - "xform Fm ๏"
+    - "xform fm ๏"
+    - "xform dg ๏"
+    - "xform jm ๆ"
+    - "xform RRN ฎ"
+    - "xform Rd ฏ"
+    - "xform Rt ฐ"
+    - "xform RT ฑ"
+    - "xform RD ฒ"
+    - "xform RRn ณ"
+    - "xform SJ ศ"
+    - "xform SR ษ"
+    - "xform SL ฬ"
+    - "xform Ry ฤ"
+    - "xform Ly ฦ"
+    - "xform RY ฤๅ"
+    - "xform LY ฦๅ"
+    - "xform OY ๅ"
+    - "xform KH ฆ"
+    - "xform CH ฌ"
+    - "xform TH ธ"
+    - "xform PH ภ"
+    - "xform ae แ"
+    - "xform q า"
+    - "xform Q อ"
+    - "xform w ว"
+    - "xform W ใ"
+    - "xform e เ"
+    - "xform E ไ"
+    - "xform r ร"
+    - "xform R ้"
+    - "xform t ถ"
+    - "xform T ท"
+    - "xform y ึ"
+    - "xform Y ื"
+    - "xform u ุ"
+    - "xform U ู"
+    - "xform i ิ"
+    - "xform I ี"
+    - "xform o อ"
+    - "xform O โ"
+    - "xform p ผ"
+    - "xform P พ"
+    - "xform a ั"
+    - "xform A ะ"
+    - "xform s ส"
+    - "xform S ่"
+    - "xform d ต"
+    - "xform D ๊"
+    - "xform f ฝ"
+    - "xform F ฟ"
+    - "xform g ก"
+    - "xform G ็"
+    - "xform h ห"
+    - "xform H ฮ"
+    - "xform j ย"
+    - "xform J ญ"
+    - "xform k ข"
+    - "xform K ค"
+    - "xform l ล"
+    - "xform L ๋"
+    - "xform z จ"
+    - "xform Z ซ"
+    - "xform x ฃ"
+    - "xform X ฅ"
+    - "xform c ฉ"
+    - "xform C ช"
+    - "xform v ง"
+    - "xform V ำ"
+    - "xform b ป"
+    - "xform B –"
+    - "xform n น"
+    - "xform N ด"
+    - "xform m ม"
+    - "xform M บ"
+    #- xform/ /,/
 
 punctuator:
-  import_preset: symbols
-
+  import_preset: default
+    
 key_binder:
   import_preset: default
   bindings: 
-  - { when: has_menu, accept: asterisk, send: Shift+Return}
+  - { when: has_menu, accept: asterisk, send: Shift+Return }
+  - { when: has_menu, accept: '/', send: Control+Shift+Return}
   - { when: has_menu, accept: "#", toggle: emoji_cn }
+  - { when: paging, accept: bracketleft, send: Page_Up }
+  - { when: has_menu, accept: bracketright, send: Page_Down }
 
 recognizer:
   import_preset: default
