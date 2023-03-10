@@ -15,15 +15,15 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中文, 番文 ]
+    states: [ ไทย, ฝรั่ง ]
   - name: full_shape
-    states: [ 半角, 全角 ]
+    states: [ half, full ]
   - name: simplification
-    states: [ 深筆, 简体 ]
+    states: [ จีนตัวเต็ม, จีนตัวย่อ ]
   - name: ascii_punct
     states: [ 。，, ．， ]
   - name: zh_hk                
-    states: [ 臺, 港]             
+    states: [ ไต้หวัน, ฮ่องกง]             
     reset: 1                      #默认开启
   - name: emoji_cn                #Emoji开关
     states: [ 〇, 😊]             #显示在状态栏的图标
