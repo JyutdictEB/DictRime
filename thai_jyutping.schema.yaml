@@ -85,7 +85,7 @@ speller:
     - xform/(d\S+)4/$1<๖>/ #hz
     - xform/(g\S+)4/$1<๖>/ #hz
     - xform/(z\S+)4/$1<๖>/ #hz
-    - xform/sl(\S+[0-9,])/<ɬ>$1/ #hz
+    - xform/sl(\S+[0-9,])/:$1/ #hz
     - xform/<๖>/6/ #regex rime
     - xform/p(\S+[4569,])/P$1/
     - xform/f(\S+[4569,])/F$1/
@@ -116,9 +116,9 @@ speller:
     - xform/(^|\s)([Aaqe<ε>iIuUyYoOEW]\S*[0-9,])/$1Q$2/
     #- xform/(^|\s)([nmlvJrw]\S+)2$/$1<๕>/ #hz
     #- xform/<๕>/5/ #regex rime
-    - xform/(^|\s)([nmlvJrw<ɬ>]\S+[123])/$1h$2/
+    - xform/(^|\s)([nmlvJrw:]\S+[123])/$1h$2/
     - xform/(^|\s)(j\S+[123])/$1Q$2/
-    - xform/<ɬ>(\S*[0-9,])/SL$1/ #hz
+    - xform/:(\S*[0-9,])/SL$1/ #hz
     - xform/am([0-9,])/V$1/
     - xform/aj(\S*[0-9])/E$1/
     - xform/i(\S*[0-9,])/I$1/
@@ -280,7 +280,7 @@ translator:
     #- xform/(g\S+)4/$1<๖>/ #hz
     #- xform/(z\S+)4/$1<๖>/ #hz
     #- xform/<๖>/6/ #regex rime
-    - xform/sl(\S+[0-9,])/<ɬ>$1/ #hz
+    - xform/sl(\S+[0-9,])/:$1/ #hz
     - xform/p(\S+[4569,])/P$1/
     - xform/f(\S+[4569,])/F$1/
     - xform/t(\S+[4569,])/T$1/
@@ -304,10 +304,9 @@ translator:
     - xform/(^|\s)([Aaqe<ɛ>iIuUyYoOEW]\S*[0-9,])/$1Q$2/
     #- xform/(^|\s)([nmlvJrw]\S+)2/$1<๕>/ #hz
     #- xform/<๕>/5/ #regex rime
-    - xform/sl(\S+[0-9,])/<ɬ>$1/ #hz
-    - xform/(^|\s)([nmlvJrw<ɬ>]\S+[123])/$1h$2/
+    - xform/(^|\s)([nmlvJrw:]\S+[123])/$1h$2/
     - xform/(^|\s)(j\S+[123])/$1Q$2/
-    - xform/<ɬ>(\S*[0-9,])/SL$1/ #hz
+    - xform/:(\S*[0-9,])/SL$1/ #hz
     - xform/am([0-9,])/V$1/
     - xform/aj(\S*[0-9])/E$1/
     - xform/i(\S*[0-9,])/I$1/
@@ -485,7 +484,7 @@ reverse_lookup:
     #- xform/(g\S+)4/$1<๖>/ #hz
     #- xform/(z\S+)4/$1<๖>/ #hz
     #- xform/<๖>/6/ #regex rime
-    - xform/sl(\S+[0-9,])/<ɬ>$1/ #hz
+    - xform/sl(\S+[0-9,])/:$1/ #hz
     - xform/p(\S+[4569,])/P$1/
     - xform/f(\S+[4569,])/F$1/
     - xform/t(\S+[4569,])/T$1/
@@ -509,10 +508,9 @@ reverse_lookup:
     - xform/(^|\s)([Aaqe<ɛ>iIuUyYoOEW]\S*[0-9,])/$1Q$2/
     #- xform/(^|\s)([nmlvJrw]\S+)2/$1<๕>/ #hz
     #- xform/<๕>/5/ #regex rime
-    - xform/sl(\S+[0-9,])/<ɬ>$1/ #hz
-    - xform/(^|\s)([nmlvJrw<ɬ>]\S+[123])/$1h$2/
+    - xform/(^|\s)([nmlvJrw:]\S+[123])/$1h$2/
     - xform/(^|\s)(j\S+[123])/$1Q$2/
-    - xform/<ɬ>(\S*[0-9,])/SL$1/ #hz
+    - xform/:(\S*[0-9,])/SL$1/ #hz
     - xform/am([0-9,])/V$1/
     - xform/aj(\S*[0-9])/E$1/
     - xform/i(\S*[0-9,])/I$1/
