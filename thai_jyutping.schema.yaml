@@ -6,7 +6,7 @@
 schema:
   schema_id: Thai_Jyutping
   name: 泰粵拼
-  version: "2.1"
+  version: "2.2"
   author:
     - Khuy
   description: |
@@ -112,12 +112,13 @@ speller:
     - xform/a([0-9,])/A$1/
     - xform/([Aaqe<ε>iIuUyYoOEW])u([0-9,])/$1w$2/
     - xform/([Aaqe<ε>iIuUyYoOEW])i([0-9,])/$1j$2/
-    - xform/^([Aaqe<ε>iIuUyYoOEW]\S*[0-9,])/Q$1/
-    #- xform/^([nmlvJrw]\S+)2$/$1<๕>/ #hz
+    - xform/\b([Aaqe<ε>iIuUyYoOEW]\S*[0-9,])/Q$1/
+    #- xform/\b([nmlvJrw]\S+)2$/$1<๕>/ #hz
     #- xform/<๕>/5/ #regex rime
-    - xform/^([nmlvJrw]\S+[123])/h$1/
-    - xform/^(j\S+[123])/Q$1/
-    - xform/sl(\S+[0-9,])/SL$1/ #hz
+    - xform/sl(\S+[0-9,])/<ɬ>$1/ #hz
+    - xform/\b([nmlvJrw<ɬ>]\S+[123])/h$1/
+    - xform/\b(j\S+[123])/Q$1/
+    - xform/<ɬ>(\S*[0-9,])/SL$1/ #hz
     - xform/am([0-9,])/V$1/
     - xform/aj(\S*[0-9])/E$1/
     - xform/i(\S*[0-9,])/I$1/
@@ -140,10 +141,10 @@ speller:
     - derive/ei/eo/
     - derive/ei/oe/
     - derive/E/aj/
-    - fuzz/^(\S+)[0-9,]$/$1/      # 拼簡聲調
-    - derive/^([gkK]w).+$/$1/      # 聲母
-    - derive/^(R[dtTD]).+$/$1/      # 聲母
-    - derive/^([a-zA-Z]).+[0-9,]$/$1/      # 拼簡字首
+    - fuzz/\b(\S+)[0-9,]$/$1/      # 拼簡聲調
+    - derive/\b([gkK]w).+$/$1/      # 聲母
+    - derive/\b(R[dtTD]).+$/$1/      # 聲母
+    - derive/\b([a-zA-Z]).+[0-9,]$/$1/      # 拼簡字首
     #- abbrev/^([a-z]).+[0-9,]$/$1/      # 拼簡字首
     - "xform/0/L/"
     - "xform/1//"
@@ -299,12 +300,13 @@ translator:
     - xform/a([0-9,])/A$1/
     - xform/([Aaqe<ɛ>iIuUyYoOEW])u([0-9,])/$1w$2/
     - xform/([Aaqe<ɛ>iIuUyYoOEW])i([0-9,])/$1j$2/
-    - xform/^([Aaqe<ɛ>iIuUyYoOEW]\S*[0-9,])/Q$1/
-    #- xform/^([nmlvJrw]\S+)2/$1<๕>/ #hz
+    - xform/\b([Aaqe<ɛ>iIuUyYoOEW]\S*[0-9,])/Q$1/
+    #- xform/\b([nmlvJrw]\S+)2/$1<๕>/ #hz
     #- xform/<๕>/5/ #regex rime
-    - xform/^([nmlvJrw]\S+[123])/h$1/
-    - xform/^(j\S+[123])/Q$1/
-    - xform/sl(\S+[0-9,])/SL$1/
+    - xform/sl(\S+[0-9,])/<ɬ>$1/ #hz
+    - xform/\b([nmlvJrw<ɬ>]\S+[123])/h$1/
+    - xform/\b(j\S+[123])/Q$1/
+    - xform/<ɬ>(\S*[0-9,])/SL$1/ #hz
     - xform/am([0-9,])/V$1/
     - xform/aj(\S*[0-9])/E$1/
     - xform/i(\S*[0-9,])/I$1/
@@ -318,8 +320,8 @@ translator:
     - xform/y(\S*[0-9,])/Y$1/ #dif from speller
     - xform/Y([0-9,])/Yo$1/ #thai combi
     - xform/<ɯ>([0-9,])/Y$1/ #fw
-    - xform/^([mnv])([0-9,])/$1ฺ$2/ #comment_format
-    - xform/([^aqe<ɛ>iIuUyYoOEWjwG][mnv])([0-9,])/$1ฺ$2/ #comment_format
+    - xform/\b([mnv])([0-9,])/$1ฺ$2/ #comment_format
+    #- xform/([^aqe<ɛ>iIuUyYoOEWjwG][mnv])([0-9,])/$1ฺ$2/ #comment_format
     - xform/OG([0-9,])/OA$1/ #thai combi โ–ะ
     - xform/OG(\S+[0-9,])/$1/ #thai combi erase โ–ะ
     - xform/h(<ɛ>|e|O|E|W)([nmlvJrw][0-9,])/hฺ$1$2/ #comment_format
@@ -502,12 +504,13 @@ reverse_lookup:
     - xform/a([0-9,])/A$1/
     - xform/([Aaqe<ɛ>iIuUyYoOEW])u([0-9,])/$1w$2/
     - xform/([Aaqe<ɛ>iIuUyYoOEW])i([0-9,])/$1j$2/
-    - xform/^([Aaqe<ɛ>iIuUyYoOEW]\S*[0-9,])/Q$1/
-    #- xform/^([nmlvJrw]\S+)2/$1<๕>/ #hz
+    - xform/\b([Aaqe<ɛ>iIuUyYoOEW]\S*[0-9,])/Q$1/
+    #- xform/\b([nmlvJrw]\S+)2/$1<๕>/ #hz
     #- xform/<๕>/5/ #regex rime
-    - xform/^([nmlvJrw]\S+[123])/h$1/
-    - xform/^(j\S+[123])/Q$1/
-    - xform/sl(\S+[0-9,])/SL$1/
+    - xform/sl(\S+[0-9,])/<ɬ>$1/ #hz
+    - xform/\b([nmlvJrw<ɬ>]\S+[123])/h$1/
+    - xform/\b(j\S+[123])/Q$1/
+    - xform/<ɬ>(\S*[0-9,])/SL$1/ #hz
     - xform/am([0-9,])/V$1/
     - xform/aj(\S*[0-9])/E$1/
     - xform/i(\S*[0-9,])/I$1/
@@ -521,7 +524,7 @@ reverse_lookup:
     - xform/y(\S*[0-9,])/Y$1/ #dif from speller
     - xform/Y([0-9,])/Yo$1/ #thai combi
     - xform/<ɯ>([0-9,])/Y$1/ #fw
-    - xform/^([mnv])([0-9,])/$1ฺ$2/ #comment_format
+    - xform/\b([mnv])([0-9,])/$1ฺ$2/ #comment_format
     - xform/([^aqe<ɛ>iIuUyYoOEWjwG][mnv])([0-9,])/$1ฺ$2/ #comment_format
     - xform/OG([0-9,])/OA$1/ #thai combi โ–ะ
     - xform/OG(\S+[0-9,])/$1/ #thai combi erase โ–ะ

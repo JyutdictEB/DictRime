@@ -16,7 +16,7 @@ import_tables:
 #  - jyut6ping3.chars
 #  - HamZau_JyutPing
 #  - daeizmoq.jyutping
-#  - sawmoq.jyutping
+  - sawmoq.jyutping
 #  - gatsiu.jyutping
 #  - gatsiujyut.jyutping
 ...
