@@ -301,7 +301,8 @@ translator:
     - xform/a([0-9,])/A$1/
     - xform/([Aaqe<ɛ>iIuUyYoOEW])u([0-9,])/$1w$2/
     - xform/([Aaqe<ɛ>iIuUyYoOEW])i([0-9,])/$1j$2/
-    - xform/(^|\s)([Aaqe<ɛ>iIuUyYoOEW]\S*[0-9,])/$1Q$2/
+    - xform/(^|\s)([AaqeiIuUyYoOEW]\S*[0-9,])/$1Q$2/
+    - xform/(^|\s)(<ɛ>\S*[0-9,])/$1Q$2/
     #- xform/(^|\s)([nmlvJrw]\S+)2/$1<๕>/ #hz
     #- xform/<๕>/5/ #regex rime
     - xform/(^|\s)([nmlvJrw:]\S+[123])/$1h$2/
@@ -505,7 +506,8 @@ reverse_lookup:
     - xform/a([0-9,])/A$1/
     - xform/([Aaqe<ɛ>iIuUyYoOEW])u([0-9,])/$1w$2/
     - xform/([Aaqe<ɛ>iIuUyYoOEW])i([0-9,])/$1j$2/
-    - xform/(^|\s)([Aaqe<ɛ>iIuUyYoOEW]\S*[0-9,])/$1Q$2/
+    - xform/(^|\s)([AaqeiIuUyYoOEW]\S*[0-9,])/$1Q$2/
+    - xform/(^|\s)(<ɛ>\S*[0-9,])/$1Q$2/
     #- xform/(^|\s)([nmlvJrw]\S+)2/$1<๕>/ #hz
     #- xform/<๕>/5/ #regex rime
     - xform/(^|\s)([nmlvJrw:]\S+[123])/$1h$2/

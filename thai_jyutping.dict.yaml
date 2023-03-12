@@ -14,14 +14,14 @@ min_phrase_weight: 100
 import_tables:
   - fanwan
 #  - jyut6ping3.chars
-#  - HamZau_JyutPing
+  - HamZau_JyutPing
 #  - daeizmoq.jyutping
   - sawmoq.jyutping
 #  - gatsiu.jyutping
 #  - gatsiujyut.jyutping
 ...
 #測試	haak10	10000
-#測試	mop3	10000
+#測試	geu3	10000
 
 ฆ	KH	10000
 ฌ	CH	10000
