@@ -133,6 +133,8 @@ speller:
     - derive/<ʊ>(\S*[0-9,])/u$1/ #derive variant
     - xform/<ʊ>(\S*[0-9,])/OG$1/ #variant: uk as โ–ะ
     - xform/y(\S*[0-9,])/Yo$1/
+    - derive/([Aaqe<ε>iIuUyYoOEW])w([0-9,])/$1u$2/ #derive w j ending
+    - derive/([Aaqe<ε>iIuUyYoOEW])j([0-9,])/$1i$2/ #derive w j ending
     - xform/OG([0-9,])/OA$1/ #thai combi โ–ะ
     - derive/OG(\S+[0-9,])/$1/ #thai combi erase โ–ะ
     - derive/Yo(\S*[0-9,])/Y$1/ #fw variant, e.g. Yn->Yon
