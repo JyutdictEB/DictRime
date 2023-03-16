@@ -659,8 +659,8 @@ key_binder:
   - { when: has_menu, accept: asterisk, send: Shift+Return }
   - { when: has_menu, accept: '/', send: Control+Shift+Return}
   - { when: has_menu, accept: "#", toggle: emoji_cn }
-  - { when: paging, accept: bracketleft, send: Page_Up }
-  - { when: has_menu, accept: bracketright, send: Page_Down }
+  #- { when: paging, accept: bracketleft, send: Page_Up }
+  #- { when: has_menu, accept: bracketright, send: Page_Down }
 
 recognizer:
   import_preset: default
